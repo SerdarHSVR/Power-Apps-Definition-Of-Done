@@ -1,0 +1,938 @@
+CreateChecklist As screen:
+    Fill: =Theme.Fill
+    OnVisible: =
+
+    saveBTN As icon.Save:
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisplayMode: =If(showButton4=true && showButton5= true && showButton6=true && showButton7 = true && showButton8 = true, DisplayMode.Edit,DisplayMode.Disabled)
+        Height: =50
+        Icon: =Icon.Save
+        OnSelect: |
+            =Patch(
+                'Definition of Done',
+                Defaults('Definition of Done'),
+                {
+                    Title: DataCardValue1.Text,
+                    'Ne Kadar Gerekli': neKadarGerekliCreate_1.Selected.Value,
+                    'Ana Başlık': anaBaslıkCreate_1.Selected.Value,
+                    'Alt Başlık': altBaslıkCreate_1.Selected.Value,
+                    Soru: soruTxt_1.Text,
+                    Statu: "Draft",
+                    'Neden Yapılmalı':DataCardValue5.Text,
+                    'Microsoft Link':DataCardValue7.Text,
+                    GUID:GUIDTEXT
+                }
+            )
+        Tooltip: ="Save"
+        Width: =44
+        X: =746
+        Y: =402
+        ZIndex: =13
+
+    resetBT As icon.Reset:
+        Height: =50
+        Icon: =Icon.Reset
+        OnSelect: |-
+            =UpdateContext({reset: true});
+            UpdateContext({reset: false})
+        Tooltip: ="Clear"
+        Width: =44
+        X: =688
+        Y: =402
+        ZIndex: =14
+
+    sample_nttlogo_2 As image:
+        Height: =73
+        Image: ='NTT Logo'
+        Width: =190
+        Y: =4
+        ZIndex: =15
+
+    Rectangle1_4 As rectangle:
+        BorderColor: =RGBA(103, 133, 193, 1)
+        Fill: =RGBA(103, 133, 193, 1)
+        Height: =48
+        Width: =3
+        X: =190
+        Y: =15
+        ZIndex: =16
+
+    Label1_1 As label:
+        FontWeight: =FontWeight.Semibold
+        Height: =44
+        Size: =16
+        Text: ="Create Checklist Questions"
+        Width: =413
+        X: =206
+        Y: =15
+        ZIndex: =17
+
+    Icon2_1 As icon.Home:
+        Color: =RGBA(0, 0, 0, 1)
+        Height: =40
+        Icon: =Icon.Home
+        OnSelect: =Navigate(Welcome)
+        Width: =40
+        X: =1315
+        Y: =5
+        ZIndex: =21
+
+    "questionGallery_2 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver4.0'":
+        DisplayMode: =DisplayMode.View
+        Height: =50
+        Items: ='Definition of Done'
+        Layout: =Layout.Vertical
+        ShowScrollbar: =false
+        TemplatePadding: =0
+        TemplateSize: =50
+        Width: =1307
+        Y: =461
+        ZIndex: =22
+
+        queston_2 As label:
+            Height: =39
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =12
+            Text: =soruTxt_1.Text
+            VerticalAlign: =VerticalAlign.Top
+            Width: =543
+            X: =291
+            Y: =16
+            ZIndex: =3
+
+        Separator2_7 As rectangle:
+            BorderColor: =RGBA(202, 202, 202, 1)
+            Fill: =RGBA(202, 202, 202, 1)
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =5
+
+        url_2 As icon.Link:
+            Color: =RGBA(10, 32, 117, 1)
+            Height: =30
+            Icon: =Icon.Link
+            OnSelect: =Launch(DataCardValue7.Text)
+            Tooltip: ="Detay bilgi için tıkla"
+            Visible: =If(IsBlank(DataCardValue7.Text),false,true)
+            Width: =31
+            X: =1258
+            Y: =16
+            ZIndex: =9
+
+        nedenYapılmalı_2 As label:
+            Align: =Align.Center
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =1
+            Height: =56
+            OnSelect: =Select(Parent)
+            Size: =10
+            Text: =DataCardValue5.Text
+            Visible: =If(help_2.Pressed, true, false)
+            Width: =273
+            X: =822
+            ZIndex: =14
+
+        help_2 As button:
+            AutoDisableOnSelect: =false
+            BorderColor: =
+            BorderThickness: =1
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledFill: =
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =25
+            HoverBorderColor: =RGBA(255, 255, 255, 1)
+            HoverColor: =
+            OnSelect: =Select(Parent)
+            PressedBorderColor: =RGBA(255, 255, 255, 1)
+            PressedColor: =
+            Size: =11
+            Text: ="?"
+            Visible: =If(IsBlank(DataCardValue5.Text),false,true)
+            Width: =25
+            X: =248
+            Y: =15
+            ZIndex: =15
+
+        answerButton_1 As radio:
+            BorderStyle: =BorderStyle.None
+            Height: =42
+            Items: =["Yes","No"]
+            Layout: =Layout.Horizontal
+            OnSelect: =Select(Parent)
+            PaddingTop: =5
+            RadioSize: =25
+            Size: =11
+            Width: =156
+            X: =1084
+            Y: =11
+            ZIndex: =16
+
+        HtmlText2_1 As htmlViewer:
+            Height: =44
+            HtmlText: |-
+                ="<html>
+                  <table style='width:90%'>
+                    <tr>
+                      <td style='text-align:center; border-color: #e6e6e6; color:#ffffff; 
+                          background-color: " & If(
+                    anaBaslıkCreate_1.Selected.Value = "Service",
+                    "#0080B1",
+                    If(
+                        anaBaslıkCreate_1.Selected.Value = "Rapor",
+                        "#6785C1",
+                        If(
+                            anaBaslıkCreate_1.Selected.Value = "Documentation",
+                            "#0A2075",
+                            "#4B3F72"
+                        )
+                    )
+                ) & "; 
+                          border-style: solid; border-radius: 15px; border-width: 2px; font-size:x-small'>
+                          " & anaBaslıkCreate_1.Selected.Value & "
+                      </td>
+                      <td style='text-align:center; border-color: #e6e6e6; color:#ffffff; background-color: #4B3F72; border-style: solid; border-radius: 15px; border-width: 2px; font-size:x-small'>" & altBaslıkCreate_1.Selected.Value & "</td>
+                      <td style='text-align:center; border-color: #e6e6e6; color:#ffffff; border-style: solid; border-radius: 15px; border-width: 2px; font-size:x-small; 
+                      background-color: " & If(
+                    neKadarGerekliCreate_1.Selected.Value = "Must",
+                    "#BC4328",
+                    "#83B254"
+                ) & "'>" &  neKadarGerekliCreate_1.Selected.Value & "</td>
+                    </tr>
+                  </table>
+                </html>"
+            OnSelect: =Select(Parent)
+            Width: =260
+            Y: =12
+            ZIndex: =17
+
+    ChecklistPage As icon.Home:
+        Color: =RGBA(0, 0, 0, 1)
+        Height: =35
+        Icon: =Icon.BackArrow
+        OnSelect: =Navigate(Checklist)
+        Width: =35
+        X: =1280
+        Y: =10
+        ZIndex: =28
+
+    Form1 As form:
+        DataSource: ='Definition of Done'
+        DefaultMode: =FormMode.New
+        Height: =303
+        X: =10
+        Y: =99
+        ZIndex: =29
+
+        Title_DataCard1 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Title"
+            Default: =ThisItem.Title
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Definition of Done'],DataSourceInfo.DisplayName,"Title")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Definition of Done'], DataSourceInfo.MaxLength, "Title")
+            Required: =true
+            Update: =DataCardValue1.Text
+            Width: =266
+            X: =0
+            Y: =0
+            ZIndex: =30
+
+            DataCardKey1 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue1 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                OnChange: |-
+                    =If(
+                      IsBlank(DataCardValue1.Text),
+                      UpdateContext({showButton8: false}),
+                      UpdateContext({showButton8: true})
+                    )
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Reset: =reset
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey1.Y + DataCardKey1.Height + 5
+                ZIndex: =2
+
+            ErrorMessage1 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue1.Y + DataCardValue1.Height
+                ZIndex: =3
+
+            StarVisible1 As label:
+                Align: =Align.Center
+                Height: =DataCardKey1.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey1.Y
+                ZIndex: =4
+
+        "'Ana Başlık_DataCard1' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="AnaBa_x015f_l_x0131_k"
+            Default: =ThisItem.'Ana Başlık'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Definition of Done'],DataSourceInfo.DisplayName,"AnaBa_x015f_l_x0131_k")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Definition of Done'], DataSourceInfo.MaxLength, "AnaBa_x015f_l_x0131_k")
+            Required: =false
+            Update: =anaBaslıkCreate_1.Selected.Value
+            Width: =266
+            X: =1
+            Y: =0
+            ZIndex: =30
+
+            DataCardKey2 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            ErrorMessage2 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =anaBaslıkCreate_1.Y + anaBaslıkCreate_1.Height
+                ZIndex: =3
+
+            StarVisible2 As label:
+                Align: =Align.Center
+                Height: =DataCardKey2.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey2.Y
+                ZIndex: =4
+
+            anaBaslıkCreate_1 As dropdown:
+                AllowEmptySelection: |
+                    =true
+                Default: =""
+                DisplayMode: =
+                Items: |-
+                    =Sort(
+                        Distinct(
+                            'Definition of Done',
+                            'Ana Başlık'
+                        ),
+                        Value
+                    )
+                OnChange: |-
+                    =If(
+                      IsBlank(anaBaslıkCreate_1.Selected.Value),
+                      UpdateContext({showButton6: false}),
+                      UpdateContext({showButton6: true})
+                    )
+                Reset: =reset
+                Width: =222
+                X: =30
+                Y: =44
+                ZIndex: =5
+
+            StarVisible1_1 As label:
+                Align: =Align.Center
+                Height: =DataCardKey1.Height
+                Text: ="*"
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey1.Y
+                ZIndex: =6
+
+        "'Alt Başlık_DataCard1' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="AltBa_x015f_l_x0131_k"
+            Default: =ThisItem.'Alt Başlık'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Definition of Done'],DataSourceInfo.DisplayName,"AltBa_x015f_l_x0131_k")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Definition of Done'], DataSourceInfo.MaxLength, "AltBa_x015f_l_x0131_k")
+            Required: =false
+            Update: =altBaslıkCreate_1.Selected.Value
+            Width: =266
+            X: =2
+            Y: =0
+            ZIndex: =30
+
+            DataCardKey3 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            ErrorMessage3 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =altBaslıkCreate_1.Y + altBaslıkCreate_1.Height
+                ZIndex: =3
+
+            StarVisible3 As label:
+                Align: =Align.Center
+                Height: =DataCardKey3.Height
+                Text: ="*"
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey3.Y
+                ZIndex: =4
+
+            altBaslıkCreate_1 As dropdown:
+                AllowEmptySelection: =true
+                Default: =""
+                DisplayMode: =
+                Items: |-
+                    =Sort(
+                        Distinct(
+                            Filter(
+                                'Definition of Done',
+                                'Ana Başlık' in anaBaslıkCreate_1.Selected.Value
+                            ),
+                            'Alt Başlık'
+                        ),
+                        Value
+                    )
+                OnChange: |-
+                    =If(
+                      IsBlank(altBaslıkCreate_1.Selected.Value),
+                      UpdateContext({showButton7: false}),
+                      UpdateContext({showButton7: true})
+                    )
+                Reset: =reset
+                Width: =222
+                X: =22
+                Y: =44
+                ZIndex: =5
+
+        Soru_DataCard1 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Soru"
+            Default: =ThisItem.Soru
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Definition of Done'],DataSourceInfo.DisplayName,"Soru")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Definition of Done'], DataSourceInfo.MaxLength, "Soru")
+            Required: =false
+            Update: =soruTxt_1.Text
+            Width: =266
+            X: =0
+            Y: =1
+            ZIndex: =30
+
+            DataCardKey4 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            ErrorMessage4 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =soruTxt_1.Y + soruTxt_1.Height
+                ZIndex: =3
+
+            StarVisible4 As label:
+                Align: =Align.Center
+                Height: =DataCardKey4.Height
+                Text: ="*"
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey4.Y
+                ZIndex: =4
+
+            soruTxt_1 As text:
+                Clear: =true
+                Default: =
+                DisplayMode: =
+                OnChange: |-
+                    =If(
+                      IsBlank(soruTxt_1.Text),
+                      UpdateContext({showButton4: false}),
+                      UpdateContext({showButton4: true})
+                    )
+                Reset: =reset
+                Width: =206
+                X: =30
+                Y: =44
+                ZIndex: =5
+
+        "'Neden Yapılmalı_DataCard1' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="NedenYap_x0131_lmal_x0131_"
+            Default: =ThisItem.'Neden Yapılmalı'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Definition of Done'],DataSourceInfo.DisplayName,"NedenYap_x0131_lmal_x0131_")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Definition of Done'], DataSourceInfo.MaxLength, "NedenYap_x0131_lmal_x0131_")
+            Required: =false
+            Update: =DataCardValue5.Text
+            Width: =266
+            X: =1
+            Y: =1
+            ZIndex: =30
+
+            DataCardKey5 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue5 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Reset: =reset
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey5.Y + DataCardKey5.Height + 5
+                ZIndex: =2
+
+            ErrorMessage5 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue5.Y + DataCardValue5.Height
+                ZIndex: =3
+
+            StarVisible5 As label:
+                Align: =Align.Center
+                Height: =DataCardKey5.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey5.Y
+                ZIndex: =4
+
+        "'Ne Kadar Gerekli_DataCard1' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="NeKadarGerekli"
+            Default: =ThisItem.'Ne Kadar Gerekli'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Definition of Done'],DataSourceInfo.DisplayName,"NeKadarGerekli")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =94
+            MaxLength: =DataSourceInfo([@'Definition of Done'], DataSourceInfo.MaxLength, "NeKadarGerekli")
+            Required: =false
+            Update: =neKadarGerekliCreate_1.Selected.Value
+            Width: =266
+            X: =2
+            Y: =1
+            ZIndex: =30
+
+            DataCardKey6 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            ErrorMessage6 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =neKadarGerekliCreate_1.Y + neKadarGerekliCreate_1.Height
+                ZIndex: =3
+
+            StarVisible6 As label:
+                Align: =Align.Center
+                Height: =DataCardKey6.Height
+                Text: ="*"
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey6.Y
+                ZIndex: =4
+
+            neKadarGerekliCreate_1 As dropdown:
+                AllowEmptySelection: =true
+                Default: =
+                DisplayMode: =
+                Items: |-
+                    =Sort(
+                        Distinct(
+                            'Definition of Done',
+                            'Ne Kadar Gerekli'
+                        ),
+                        Value
+                    )
+                OnChange: |-
+                    =If(
+                      IsBlank(neKadarGerekliCreate_1.Selected.Value),
+                      UpdateContext({showButton5: false}),
+                      UpdateContext({showButton5: true})
+                    )
+                OnSelect: =
+                Reset: =reset
+                Width: =222
+                X: =22
+                Y: =44
+                ZIndex: =5
+
+        "'Microsoft Link_DataCard1' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="MicrosoftLink"
+            Default: =ThisItem.'Microsoft Link'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Definition of Done'],DataSourceInfo.DisplayName,"MicrosoftLink")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Definition of Done'], DataSourceInfo.MaxLength, "MicrosoftLink")
+            Required: =false
+            Update: =DataCardValue7.Text
+            Width: =266
+            X: =0
+            Y: =2
+            ZIndex: =30
+
+            DataCardKey7 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =28
+                Y: =16
+                ZIndex: =1
+
+            DataCardValue7 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey7.Y + DataCardKey7.Height + 5
+                ZIndex: =2
+
+            ErrorMessage7 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue7.Y + DataCardValue7.Height
+                ZIndex: =3
+
+            StarVisible7 As label:
+                Align: =Align.Center
+                Height: =DataCardKey7.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey7.Y
+                ZIndex: =4
+
+    Group1 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =29
+
+        "'name-surname_5' As label":
+            Align: =Align.Right
+            FontWeight: =FontWeight.Semibold
+            Height: =30
+            Size: =14
+            Text: =User().FullName
+            Width: =156
+            X: =1060
+            Y: =5
+            ZIndex: =18
+
+        profilImage_5 As image:
+            Height: =50
+            Image: =User().Image
+            RadiusBottomLeft: =70
+            RadiusBottomRight: =70
+            RadiusTopLeft: =70
+            RadiusTopRight: =70
+            Width: =50
+            X: =1225
+            Y: =5
+            ZIndex: =19
+
+        Label8_3 As label:
+            Align: =Align.Right
+            Color: =RGBA(149, 149, 149, 1)
+            Height: =30
+            Size: =12
+            Text: =User().Email
+            Width: =251
+            X: =965
+            Y: =29
+            ZIndex: =20
+
+    "questionGallery_4 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver4.0'":
+        Height: =210
+        Items: |-
+            =Filter(
+                'Definition of Done',
+                Statu = "Draft"
+            )
+        Layout: =Layout.Vertical
+        TemplatePadding: =0
+        TemplateSize: =56
+        Width: =1307
+        X: =8
+        Y: =558
+        ZIndex: =30
+
+        queston_5 As label:
+            Height: =39
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =12
+            Text: =ThisItem.Soru
+            VerticalAlign: =VerticalAlign.Top
+            Width: =543
+            X: =291
+            Y: =16
+            ZIndex: =3
+
+        Separator2_9 As rectangle:
+            BorderColor: =RGBA(202, 202, 202, 1)
+            Fill: =RGBA(202, 202, 202, 1)
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =5
+
+        url_5 As icon.Link:
+            Color: =RGBA(10, 32, 117, 1)
+            Height: =30
+            Icon: =Icon.Link
+            OnSelect: =Launch(ThisItem.'Microsoft Link')
+            Tooltip: ="Detay bilgi için tıkla"
+            Visible: =If(IsBlank(ThisItem.'Microsoft Link'),false,true)
+            Width: =31
+            X: =1258
+            Y: =16
+            ZIndex: =9
+
+        nedenYapılmalı_4 As label:
+            Align: =Align.Center
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =1
+            Height: =56
+            OnSelect: =Select(Parent)
+            Size: =10
+            Text: =ThisItem.'Neden Yapılmalı'
+            Visible: =If(help_5.Pressed, true, false)
+            Width: =273
+            X: =822
+            ZIndex: =14
+
+        help_5 As button:
+            AutoDisableOnSelect: =false
+            BorderColor: =
+            BorderThickness: =1
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledFill: =
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =25
+            HoverBorderColor: =RGBA(255, 255, 255, 1)
+            HoverColor: =
+            OnSelect: =Select(Parent)
+            PressedBorderColor: =RGBA(255, 255, 255, 1)
+            PressedColor: =
+            Size: =11
+            Text: ="?"
+            Visible: =If(IsBlank(nedenYapılmalı_4),false,true)
+            Width: =25
+            X: =248
+            Y: =15
+            ZIndex: =15
+
+        answerButton_3 As radio:
+            BorderStyle: =BorderStyle.None
+            Height: =42
+            Items: =["Yes","No"]
+            Layout: =Layout.Horizontal
+            OnSelect: |-
+                =UpdateContext({selectedQuestion: answerButton_3})
+            PaddingTop: =5
+            RadioSize: =25
+            Size: =11
+            Width: =156
+            X: =1084
+            Y: =11
+            ZIndex: =16
+
+        HtmlText2_4 As htmlViewer:
+            Height: =44
+            HtmlText: |-
+                ="<html>
+                  <table style='width:90%'>
+                    <tr>
+                      <td style='text-align:center; border-color: #e6e6e6; color:#ffffff; 
+                          background-color: " & If(
+                    ThisItem.'Ana Başlık' = "Service",
+                    "#0080B1",
+                    If(
+                        ThisItem.'Ana Başlık' = "Rapor",
+                        "#6785C1",
+                        If(
+                            ThisItem.'Ana Başlık' = "Documentation",
+                            "#0A2075",
+                            "#4B3F72"
+                        )
+                    )
+                ) & "; 
+                          border-style: solid; border-radius: 15px; border-width: 2px; font-size:x-small'>
+                          " & ThisItem.'Ana Başlık' & "
+                      </td>
+                      <td style='text-align:center; border-color: #e6e6e6; color:#ffffff; background-color: #4B3F72; border-style: solid; border-radius: 15px; border-width: 2px; font-size:x-small'>" & ThisItem.'Alt Başlık' & "</td>
+                      <td style='text-align:center; border-color: #e6e6e6; color:#ffffff; border-style: solid; border-radius: 15px; border-width: 2px; font-size:x-small; 
+                      background-color: " & If(
+                    ThisItem.'Ne Kadar Gerekli' = "Must",
+                    "#BC4328",
+                    "#83B254"
+                ) & "'>" & ThisItem.'Ne Kadar Gerekli' & "</td>
+                    </tr>
+                  </table>
+                </html>"
+            OnSelect: =Select(Parent)
+            Width: =260
+            Y: =12
+            ZIndex: =17
+
+        Icon1_1 As icon.Edit:
+            Height: =30
+            Icon: =Icon.Edit
+            OnSelect: |-
+                =Set(varSelected, ThisItem); Navigate(EditQuestions,ScreenTransition.Fade)
+                
+                
+                //Set(SelectedRecord,questionGallery_4.Selected);Navigate(EditQuestions,ScreenTransition.Fade)
+            Width: =30
+            X: =1258
+            Y: =13
+            ZIndex: =18
+

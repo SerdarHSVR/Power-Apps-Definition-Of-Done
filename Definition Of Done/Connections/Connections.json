@@ -1,0 +1,34 @@
+{
+  "a0361826-9f96-43ac-abeb-46cf9104f90e": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1623/1.0.1623.3210/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://itellicloud.sharepoint.com/teams/MSTeams_BIGroupManagement2": {
+        "dataSources": {
+          "Definiation of Done-Anketler": {
+            "tableName": "5dfb0756-16ac-4aef-b22a-bc5192da01e4"
+          },
+          "Definition of Done": {
+            "tableName": "634c6dc1-41b4-440c-973d-63b654dbd7fc"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Definition of Done",
+      "Definiation of Done-Anketler"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "a0361826-9f96-43ac-abeb-46cf9104f90e"
+  }
+}

@@ -1,0 +1,332 @@
+Checklist As screen:
+    Fill: =Theme.Fill
+    OnHidden: |
+        =
+    OnVisible: =
+
+    createQuestionPage As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 0)
+        DisabledFill: =RGBA(255, 255, 255, 1)
+        DisplayMode: =DisplayMode.Disabled
+        Height: =632
+        Text: =""
+        Width: =1337
+        X: =13
+        Y: =123
+        ZIndex: =1
+
+    platformName_1 As label:
+        Align: =Align.Center
+        Font: =Font.Arial
+        Height: =77
+        Size: =32
+        Text: =platformSelect.SelectedText.Value
+        Width: =303
+        X: =576
+        ZIndex: =2
+
+    "questionGallery_1 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver4.0'":
+        Height: =602
+        Items: |-
+            =Filter(
+                'Definition of Done',
+                'Ne Kadar Gerekli' in neKadargerekliBox_1.SelectedItems && 
+                'Ana Başlık' in anabaslıkBox_1.SelectedItems && 
+                'Alt Başlık' in altbaslıkBox_1.SelectedItems && 
+                Title = platformSelect.SelectedText.Value &&
+                Statu = "in-service"
+            )
+        Layout: =Layout.Vertical
+        TemplatePadding: =0
+        TemplateSize: =56
+        Width: =1307
+        X: =28
+        Y: =138
+        ZIndex: =3
+
+        queston_1 As label:
+            Height: =39
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =12
+            Text: =ThisItem.Soru
+            VerticalAlign: =VerticalAlign.Top
+            Width: =543
+            X: =291
+            Y: =16
+            ZIndex: =3
+
+        Separator2_6 As rectangle:
+            BorderColor: =RGBA(202, 202, 202, 1)
+            Fill: =RGBA(202, 202, 202, 1)
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =5
+
+        url_1 As icon.Link:
+            Color: =RGBA(10, 32, 117, 1)
+            Height: =30
+            Icon: =Icon.Link
+            OnSelect: =Launch(ThisItem.'Microsoft Link')
+            Tooltip: ="Detay bilgi için tıkla"
+            Visible: =If(IsBlank(ThisItem.'Microsoft Link'),false,true)
+            Width: =31
+            X: =1258
+            Y: =16
+            ZIndex: =9
+
+        nedenYapılmalı_1 As label:
+            Align: =Align.Center
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =1
+            Height: =56
+            OnSelect: =Select(Parent)
+            Size: =10
+            Text: =ThisItem.'Neden Yapılmalı'
+            Visible: =If(help_1.Pressed, true, false)
+            Width: =273
+            X: =822
+            ZIndex: =14
+
+        help_1 As button:
+            AutoDisableOnSelect: =false
+            BorderColor: =
+            BorderThickness: =1
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledFill: =
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =25
+            HoverBorderColor: =RGBA(255, 255, 255, 1)
+            HoverColor: =
+            OnSelect: =Select(Parent)
+            PressedBorderColor: =RGBA(255, 255, 255, 1)
+            PressedColor: =
+            Size: =11
+            Text: ="?"
+            Visible: =If(IsBlank(nedenYapılmalı_1),false,true)
+            Width: =25
+            X: =248
+            Y: =15
+            ZIndex: =15
+
+        answerButton As radio:
+            BorderStyle: =BorderStyle.None
+            Height: =42
+            Items: =["Yes","No"]
+            Layout: =Layout.Horizontal
+            OnSelect: |-
+                =UpdateContext({selectedQuestion: answerButton})
+            PaddingTop: =5
+            RadioSize: =25
+            Size: =11
+            Width: =156
+            X: =1084
+            Y: =11
+            ZIndex: =16
+
+        HtmlText2 As htmlViewer:
+            Height: =44
+            HtmlText: |-
+                ="<html>
+                  <table style='width:90%'>
+                    <tr>
+                      <td style='text-align:center; border-color: #e6e6e6; color:#ffffff; 
+                          background-color: " & If(
+                    ThisItem.'Ana Başlık' = "Service",
+                    "#0080B1",
+                    If(
+                        ThisItem.'Ana Başlık' = "Rapor",
+                        "#6785C1",
+                        If(
+                            ThisItem.'Ana Başlık' = "Documentation",
+                            "#0A2075",
+                            "#4B3F72"
+                        )
+                    )
+                ) & "; 
+                          border-style: solid; border-radius: 15px; border-width: 2px; font-size:x-small'>
+                          " & ThisItem.'Ana Başlık' & "
+                      </td>
+                      <td style='text-align:center; border-color: #e6e6e6; color:#ffffff; background-color: #4B3F72; border-style: solid; border-radius: 15px; border-width: 2px; font-size:x-small'>" & ThisItem.'Alt Başlık' & "</td>
+                      <td style='text-align:center; border-color: #e6e6e6; color:#ffffff; border-style: solid; border-radius: 15px; border-width: 2px; font-size:x-small; 
+                      background-color: " & If(
+                    ThisItem.'Ne Kadar Gerekli' = "Must",
+                    "#BC4328",
+                    "#83B254"
+                ) & "'>" & ThisItem.'Ne Kadar Gerekli' & "</td>
+                    </tr>
+                  </table>
+                </html>"
+            OnSelect: =Select(Parent)
+            Width: =260
+            Y: =12
+            ZIndex: =17
+
+    nttLogo_5 As image:
+        Height: =sample_nttlogo.Height
+        Image: =sample_nttlogo.Image
+        Width: =sample_nttlogo.Width
+        X: =sample_nttlogo.X
+        Y: =sample_nttlogo.Y
+        ZIndex: =4
+
+    Rectangle1_2 As rectangle:
+        BorderColor: =RGBA(103, 133, 193, 1)
+        Fill: =RGBA(103, 133, 193, 1)
+        Height: =48
+        Width: =3
+        X: =193
+        Y: =17
+        ZIndex: =11
+
+    PageName As label:
+        FontWeight: =FontWeight.Semibold
+        Height: =44
+        Size: =16
+        Text: ="Checklist"
+        Width: =413
+        X: =193
+        Y: =4
+        ZIndex: =12
+
+    powerBIreportName_3 As label:
+        Height: =25
+        Size: =12
+        Text: =reportName.Text
+        Width: =177
+        X: =196
+        Y: =39
+        ZIndex: =13
+
+    profilImage_4 As image:
+        Height: =45
+        Image: =User().Image
+        RadiusBottomLeft: =70
+        RadiusBottomRight: =70
+        RadiusTopLeft: =70
+        RadiusTopRight: =70
+        Tooltip: =User().Email
+        Width: =45
+        X: =1305
+        Y: =15
+        ZIndex: =14
+
+    HomePageBT As icon.Home:
+        Color: =RGBA(0, 0, 0, 1)
+        Height: =35
+        Icon: =Icon.Home
+        OnSelect: =Navigate(Welcome)
+        Width: =35
+        X: =1259
+        Y: =20
+        ZIndex: =15
+
+    goToFilterPage As icon.Home:
+        Color: =RGBA(0, 0, 0, 1)
+        Height: =35
+        Icon: =Icon.BackArrow
+        OnSelect: =Navigate('Filiter Page')
+        Width: =35
+        X: =1214
+        Y: =22
+        ZIndex: =16
+
+    Label6 As label:
+        Height: =28
+        Italic: =true
+        Size: =10
+        Text: ="*Eğer bahsedilen konu sizin raporunuzda yoksa Yes diye işaretleyin."
+        Width: =426
+        X: =13
+        Y: =95
+        ZIndex: =17
+
+    "'Number of Answers_1' As group":
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =17
+
+        yesCount_1 As label:
+            Height: =39
+            Text: |-
+                ="Number of Yes: " & CountIf(questionGallery_1.AllItems, answerButton.Selected.Value = "Yes")
+            Visible: =Toggle_nesnelerigoster.Value
+            Width: =190
+            X: =928
+            Y: =11
+            ZIndex: =5
+
+        noCount_1 As label:
+            Height: =22
+            Text: |-
+                ="Number of No: " & CountIf(questionGallery_1.AllItems, answerButton.Selected.Value = "No")
+            Visible: =Toggle_nesnelerigoster.Value
+            Width: =191
+            X: =928
+            Y: =41
+            ZIndex: =6
+
+        emptyCount_1 As label:
+            Height: =41
+            Text: |-
+                ="Number of Empty: " & CountIf(questionGallery_1.AllItems, IsBlank(answerButton.Selected.Value))
+            Visible: =Toggle_nesnelerigoster.Value
+            Width: =190
+            X: =928
+            Y: =52
+            ZIndex: =7
+
+    Icon5 As icon.Add:
+        Height: =30
+        Icon: =Icon.Add
+        OnSelect: =Navigate(CreateChecklist)
+        Width: =30
+        X: =1316
+        Y: =93
+        ZIndex: =18
+
+    "answerBar As gallery.'BrowseLayout_Horizontal_TwoTextOneImageVariant_ver4.0'":
+        DelayItemLoading: =true
+        Height: =13
+        Items: |-
+            =Filter(
+                'Definition of Done',
+                'Ne Kadar Gerekli' in neKadargerekliBox_1.SelectedItems && 
+                'Ana Başlık' in anabaslıkBox_1.SelectedItems && 
+                'Alt Başlık' in altbaslıkBox_1.SelectedItems && 
+                Title = platformSelect.SelectedText.Value &&
+                Statu = "in-service"
+            )
+        LoadingSpinner: =LoadingSpinner.Data
+        ShowScrollbar: =false
+        TemplatePadding: =0
+        TemplateSize: =12
+        Width: =1334
+        X: =13
+        Y: =77
+        ZIndex: =19
+
+        Rectangle3_1 As rectangle:
+            Fill: =If(answerButton = selectedQuestion, Color.Green, Color.Red)
+            Height: =5
+            OnSelect: =Select(Parent)
+            Width: =11
+            Y: =2
+            ZIndex: =4
+
+    Icon1 As icon.Edit:
+        Height: =30
+        Icon: =Icon.Edit
+        OnSelect: =Navigate(editQuestions)
+        Width: =30
+        X: =1286
+        Y: =93
+        ZIndex: =20
+

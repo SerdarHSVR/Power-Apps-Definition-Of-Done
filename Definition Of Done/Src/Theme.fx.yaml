@@ -1,0 +1,86 @@
+Theme As screen:
+    Fill: =RGBA(243, 245, 247, 1)
+
+    reportName_1 As text:
+        Clear: =true
+        Default: =""
+        OnChange: |-
+            =If(
+              IsBlank(reportName_1.Text),
+              UpdateContext({showButton: false}),
+              UpdateContext({showButton: true})
+            )
+        OnSelect: =
+        X: =1046
+        Y: =696
+        ZIndex: =1
+
+    sample_nttlogo As image:
+        Height: =73
+        Image: ='NTT Logo'
+        Width: =190
+        Y: =4
+        ZIndex: =2
+
+    Rectangle1 As rectangle:
+        BorderColor: =RGBA(103, 133, 193, 1)
+        Fill: =RGBA(103, 133, 193, 1)
+        Height: =48
+        Width: =3
+        X: =190
+        Y: =15
+        ZIndex: =3
+
+    Label1 As label:
+        FontWeight: =FontWeight.Semibold
+        Height: =44
+        Size: =16
+        Text: ="Definition of Done"
+        Width: =413
+        X: =206
+        Y: =15
+        ZIndex: =4
+
+    "'name-surname_2' As label":
+        Align: =Align.Right
+        FontWeight: =FontWeight.Semibold
+        Height: =27
+        Size: =14
+        Text: =User().FullName
+        Width: =156
+        X: =1096
+        Y: =9
+        ZIndex: =5
+
+    profilImage_2 As image:
+        Height: =45
+        Image: =User().Image
+        RadiusBottomLeft: =70
+        RadiusBottomRight: =70
+        RadiusTopLeft: =70
+        RadiusTopRight: =70
+        Width: =45
+        X: =1261
+        Y: =9
+        ZIndex: =6
+
+    Label8_2 As label:
+        Align: =Align.Right
+        Color: =RGBA(149, 149, 149, 1)
+        Height: =27
+        Size: =12
+        Text: =User().Email
+        Width: =251
+        X: =1001
+        Y: =36
+        ZIndex: =7
+
+    Icon2 As icon.Home:
+        Color: =RGBA(0, 0, 0, 1)
+        Height: =35
+        Icon: =Icon.Home
+        Width: =35
+        X: =1320
+        Y: =15
+        ZIndex: =8
+

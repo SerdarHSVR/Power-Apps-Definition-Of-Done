@@ -1,0 +1,122 @@
+Welcome As screen:
+    BackgroundImage: ='ntt-data-teams-bg-5 (1) (1)'
+
+    Label2 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =48
+        Size: =20
+        Text: |-
+            ="Choose Your Platform:"
+        Visible: =showButton
+        Width: =314
+        X: =732
+        Y: =456
+        ZIndex: =4
+
+    "'name-surname' As label":
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =62
+        Size: =15
+        Text: ="Hoşgeldin, " & User().FullName & " !"
+        Width: =288
+        X: =888
+        Y: =309
+        ZIndex: =5
+
+    profilImage As image:
+        Height: =70
+        Image: =User().Image
+        RadiusBottomLeft: =70
+        RadiusBottomRight: =70
+        RadiusTopLeft: =70
+        RadiusTopRight: =70
+        Width: =72
+        X: =1275
+        Y: =18
+        ZIndex: =6
+
+    Label8 As label:
+        Text: =User().Email
+        Visible: =false
+        Width: =356
+        Y: =33
+        ZIndex: =7
+
+    reportName As text:
+        Clear: =true
+        Default: =""
+        OnChange: |-
+            =If(
+              IsBlank(reportName.Text),
+              UpdateContext({showButton: false}),
+              UpdateContext({showButton: true})
+            )
+        OnSelect: =
+        X: =1027
+        Y: =411
+        ZIndex: =9
+
+    Label2_1 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =38
+        Size: =20
+        Text: |-
+            ="Report Name:"
+        Width: =190
+        X: =732
+        Y: =413
+        ZIndex: =10
+
+    platformSelect As dropdown:
+        ChevronBackground: =RGBA(237, 237, 237, 1)
+        ChevronFill: =RGBA(0, 18, 107, 1)
+        Items: |+
+            =Distinct('Definition of Done',Title)
+            
+        OnSelect: |+
+            =false
+            
+        SelectionColor: =RGBA(0, 18, 107, 1)
+        Visible: =showButton
+        Width: =320
+        X: =1027
+        Y: =464
+        ZIndex: =11
+
+    Arrow1 As arrow:
+        Fill: =RGBA(255, 255, 255, 1)
+        OnSelect: |-
+            =Navigate(
+                'Filiter Page',
+                ScreenTransition.None
+            );
+            Set(
+                GUIDTEXT,
+                GUID()
+            );
+            /*
+            Patch(
+                'Definiation of Done-Anketler',
+                Defaults('Definiation of Done-Anketler'),
+                {
+                    GUID: GUIDTEXT,
+                    PlatformName: platformSelect.Selected.Value,
+                    Mail: User().Email,
+                    Statu: "Draft"
+                }
+            )
+            */
+        Visible: =showButton
+        X: =1297
+        Y: =528
+        ZIndex: =13
+
+    Label9_1 As label:
+        Height: =72
+        OnSelect: =
+        Text: =GUIDTEXT
+        Width: =444
+        ZIndex: =14
+

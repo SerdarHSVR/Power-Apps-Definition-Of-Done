@@ -1,0 +1,43 @@
+Information As screen:
+
+    Label3 As label:
+        Height: =30
+        Text: =User().Email
+        Width: =263
+        X: =36
+        Y: =66
+        ZIndex: =1
+
+    Toggle_nesnelerigoster As toggleSwitch:
+        FalseText: ="Nesneleri Gizle"
+        TrueText: ="Nesneleri Göster"
+        Width: =221
+        X: =1134
+        Y: =12
+        ZIndex: =2
+
+    Label5 As label:
+        Text: =Toggle_nesnelerigoster.Value
+        X: =706
+        Y: =26
+        ZIndex: =3
+
+    "Gallery5 As gallery.'BrowseLayout_Horizontal_TwoTextOneImageVariant_ver4.0'":
+        DelayItemLoading: =true
+        Height: =14
+        Items: =CustomGallerySample
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplatePadding: =0
+        TemplateSize: =29
+        Width: =1353
+        Y: =147
+        ZIndex: =4
+
+        Rectangle3 As rectangle:
+            Height: =6
+            OnSelect: =Select(Parent)
+            Width: =23
+            X: =3
+            Y: =3
+            ZIndex: =4
+
