@@ -1,5 +1,39 @@
 {
-  "484d93d6-9bfe-472d-ab14-b730e2460f86": {
+  "a0361826-9f96-43ac-abeb-46cf9104f90e": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1623/1.0.1623.3210/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://itellicloud.sharepoint.com/teams/MSTeams_BIGroupManagement2": {
+        "dataSources": {
+          "Definiation of Done-Anketler": {
+            "tableName": "5dfb0756-16ac-4aef-b22a-bc5192da01e4"
+          },
+          "Definition of Done": {
+            "tableName": "634c6dc1-41b4-440c-973d-63b654dbd7fc"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Definition of Done",
+      "Definiation of Done-Anketler"
+    ],
+    "dependencies": {},
+    "dependents": [
+      "ccb7b03f-36e2-41bc-ab6b-96b2c7ba1123"
+    ],
+    "id": "a0361826-9f96-43ac-abeb-46cf9104f90e"
+  },
+  "ccb7b03f-36e2-41bc-ab6b-96b2c7ba1123": {
     "connectionParameters": {
       "logicAppHostType": "ARM",
       "workFlowCallbackUri": "https://prod-21.westeurope.logic.azure.com:443/workflows/661f2a3a49c84329a164a1110710ec35/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=Pau7i2uTyPjLIyOSfWv3CBP6Bp8_BG6BDWqj7Q4MIlY",
@@ -32,40 +66,6 @@
       "shared_sharepointonline": "a0361826-9f96-43ac-abeb-46cf9104f90e"
     },
     "dependents": [],
-    "id": "484d93d6-9bfe-472d-ab14-b730e2460f86"
-  },
-  "a0361826-9f96-43ac-abeb-46cf9104f90e": {
-    "connectionParameters": {
-      "sku": "Enterprise"
-    },
-    "connectionRef": {
-      "apiTier": "Standard",
-      "displayName": "SharePoint",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1623/1.0.1623.3210/sharepointonline/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
-      "parameterHints": {},
-      "parameterHintsV2": {}
-    },
-    "datasets": {
-      "https://itellicloud.sharepoint.com/teams/MSTeams_BIGroupManagement2": {
-        "dataSources": {
-          "Definiation of Done-Anketler": {
-            "tableName": "5dfb0756-16ac-4aef-b22a-bc5192da01e4"
-          },
-          "Definition of Done": {
-            "tableName": "634c6dc1-41b4-440c-973d-63b654dbd7fc"
-          }
-        }
-      }
-    },
-    "dataSources": [
-      "Definition of Done",
-      "Definiation of Done-Anketler"
-    ],
-    "dependencies": {},
-    "dependents": [
-      "484d93d6-9bfe-472d-ab14-b730e2460f86"
-    ],
-    "id": "a0361826-9f96-43ac-abeb-46cf9104f90e"
+    "id": "ccb7b03f-36e2-41bc-ab6b-96b2c7ba1123"
   }
 }

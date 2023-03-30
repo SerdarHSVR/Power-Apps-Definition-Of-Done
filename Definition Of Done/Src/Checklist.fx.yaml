@@ -335,7 +335,7 @@ Checklist As screen:
     downloadBT As icon.Download:
         Height: =30
         Icon: =Icon.Download
-        OnSelect: |
+        OnSelect: |-
             =Set(
                 MyAnswers,
                 questionGallery_1.AllItems
@@ -355,7 +355,7 @@ Checklist As screen:
                     ).fileurl
                 )
             );
-            Launch(csvFileUrl);
+            Launch(csvFileUrl)
         Width: =30
         X: =1249
         Y: =90

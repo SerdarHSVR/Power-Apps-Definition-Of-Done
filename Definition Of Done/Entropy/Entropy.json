@@ -112,7 +112,6 @@
     "Label8_2": 46,
     "Label8_3": 137,
     "Label8_5": 79,
-    "Label9_1": 63,
     "Microsoft Link_DataCard1": 170,
     "Microsoft Link_DataCard4": 118,
     "name-surname": 66,
@@ -201,11 +200,11 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "03/30/2023 08:23:35",
+  "HeaderLastSavedDateTimeUTC": "03/30/2023 08:46:36",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
-    "484d93d6-9bfe-472d-ab14-b730e2460f86": "\"/providers/Microsoft.PowerApps/apis/shared_logicflows/connections/A4DEEBCD72734AC68883AEBD04DD04EF-BB97685A40392AD9\"",
-    "a0361826-9f96-43ac-abeb-46cf9104f90e": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/fdad22fa595644c0ad8a7e8b92734f8e\""
+    "a0361826-9f96-43ac-abeb-46cf9104f90e": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/fdad22fa595644c0ad8a7e8b92734f8e\"",
+    "ccb7b03f-36e2-41bc-ab6b-96b2c7ba1123": "\"/providers/Microsoft.PowerApps/apis/shared_logicflows/connections/A4DEEBCD72734AC68883AEBD04DD04EF-BB97685A40392AD9\""
   },
   "LocalDatabaseReferencesAsEmpty": false,
   "LocalResourceFileNames": {
@@ -375,7 +374,6 @@
     "Label8_2": {},
     "Label8_3": {},
     "Label8_5": {},
-    "Label9_1": {},
     "Microsoft Link_DataCard1": {},
     "Microsoft Link_DataCard4": {},
     "name-surname": {},
@@ -575,7 +573,6 @@
     "Label8_2": 180,
     "Label8_3": 58,
     "Label8_5": 124,
-    "Label9_1": 0,
     "Microsoft Link_DataCard1": 92,
     "Microsoft Link_DataCard4": 163,
     "name-surname": 3,

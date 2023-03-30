@@ -113,10 +113,3 @@ Welcome As screen:
         Y: =528
         ZIndex: =13
 
-    Label9_1 As label:
-        Height: =72
-        OnSelect: =
-        Text: =GUIDTEXT
-        Width: =444
-        ZIndex: =14
-
