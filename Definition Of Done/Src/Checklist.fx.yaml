@@ -119,6 +119,8 @@ Checklist As screen:
             Height: =42
             Items: =["Yes","No"]
             Layout: =Layout.Horizontal
+            OnChange: |
+                =
             OnSelect: |-
                 =UpdateContext({selectedQuestion: answerButton})
             PaddingTop: =5
@@ -329,4 +331,33 @@ Checklist As screen:
         X: =1286
         Y: =93
         ZIndex: =20
+
+    downloadBT As icon.Download:
+        Height: =30
+        Icon: =Icon.Download
+        OnSelect: |
+            =Set(
+                MyAnswers,
+                questionGallery_1.AllItems
+            );
+            Concurrent(
+                Notify(
+                    "Generating CSV File...",
+                    NotificationType.Information
+                ),
+                Set(
+                    csvFileUrl,
+                    DefinitionOfDoneCSV.Run(
+                        JSON(
+                            MyAnswers,
+                            JSONFormat.IgnoreBinaryData & JSONFormat.IgnoreUnsupportedTypes
+                        )
+                    ).fileurl
+                )
+            );
+            Launch(csvFileUrl);
+        Width: =30
+        X: =1249
+        Y: =90
+        ZIndex: =21
 

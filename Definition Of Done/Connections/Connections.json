@@ -1,4 +1,39 @@
 {
+  "484d93d6-9bfe-472d-ab14-b730e2460f86": {
+    "connectionParameters": {
+      "logicAppHostType": "ARM",
+      "workFlowCallbackUri": "https://prod-21.westeurope.logic.azure.com:443/workflows/661f2a3a49c84329a164a1110710ec35/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=Pau7i2uTyPjLIyOSfWv3CBP6Bp8_BG6BDWqj7Q4MIlY",
+      "workflowEndpoint": "/subscriptions/867c59c8-8ae4-4b5e-b8ac-42639cd138f8/resourceGroups/46c4de190ffc4c54aa86ee7274afa9d7-852ee4534fa743a2a8004a9a051fedd1/providers/Microsoft.Logic/workflows/a4deebcd-7273-4ac6-8883-aebd04dd04ef",
+      "workflowName": "a4deebcd-7273-4ac6-8883-aebd04dd04ef",
+      "workflowPath": "/subscriptions/867c59c8-8ae4-4b5e-b8ac-42639cd138f8/resourceGroups/46c4de190ffc4c54aa86ee7274afa9d7-852ee4534fa743a2a8004a9a051fedd1/providers/Microsoft.Logic/workflows/a4deebcd-7273-4ac6-8883-aebd04dd04ef"
+    },
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1615/1.0.1615.3163/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "a4deebcd-7273-4ac6-8883-aebd04dd04ef"
+        }
+      },
+      "parameterHintsV2": {
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "a4deebcd-7273-4ac6-8883-aebd04dd04ef"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "DefinitionOfDoneCSV"
+    ],
+    "dependencies": {
+      "shared_sharepointonline": "a0361826-9f96-43ac-abeb-46cf9104f90e"
+    },
+    "dependents": [],
+    "id": "484d93d6-9bfe-472d-ab14-b730e2460f86"
+  },
   "a0361826-9f96-43ac-abeb-46cf9104f90e": {
     "connectionParameters": {
       "sku": "Enterprise"
@@ -28,7 +63,9 @@
       "Definiation of Done-Anketler"
     ],
     "dependencies": {},
-    "dependents": [],
+    "dependents": [
+      "484d93d6-9bfe-472d-ab14-b730e2460f86"
+    ],
     "id": "a0361826-9f96-43ac-abeb-46cf9104f90e"
   }
 }
