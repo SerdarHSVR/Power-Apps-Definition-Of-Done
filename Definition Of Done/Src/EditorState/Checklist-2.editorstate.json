@@ -663,7 +663,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "createQuestionPage_4",
-      "ParentIndex": 14,
+      "ParentIndex": 12,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1468,7 +1468,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "goToSurveyPageBT_3",
-      "ParentIndex": 16,
+      "ParentIndex": 14,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2423,7 +2423,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label6_1",
-      "ParentIndex": 13,
+      "ParentIndex": 11,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3458,7 +3458,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Number of Answers_2",
-      "ParentIndex": 17,
+      "ParentIndex": 15,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4366,7 +4366,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "questionGallery_3",
-      "ParentIndex": 15,
+      "ParentIndex": 13,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
