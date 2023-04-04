@@ -22,7 +22,7 @@ Screen4 As screen:
             
             Checklist sayfasındaki temel sıkıntı hani ana başlıklar var ya, html kodun içindekiler, orayı manual olarak =service =rapor gibi ifadeler girerek renklendirmişiz. Bunun daha otomatik bir haline ihtiyacımız var. Ne kadar title varsa o kadar renk üretecek felan bir koda ihtiyacımız var. 
             
-            CheckList -2 de bir de birşey denedim. Uygun olursa kullanabiliriz. pdf ile ilgili "
+            CheckList -2 de bir de birşey denedim. Uygun olursa kullanabiliriz. pdf ile ilgili şu linkten yararlandım: https://www.youtube.com/watch?v=sK3WsjQiqcQ"
         Width: =1256
         X: =40
         Y: =40
