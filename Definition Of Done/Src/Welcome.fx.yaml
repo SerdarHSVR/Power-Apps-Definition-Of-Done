@@ -87,7 +87,7 @@ Welcome As screen:
 
     Arrow1 As arrow:
         Fill: =RGBA(255, 255, 255, 1)
-        OnSelect: |-
+        OnSelect: |
             =Navigate(
                 'Filiter Page',
                 ScreenTransition.None
@@ -96,7 +96,7 @@ Welcome As screen:
                 GUIDTEXT,
                 GUID()
             );
-            /*
+            
             Patch(
                 'Definiation of Done-Anketler',
                 Defaults('Definiation of Done-Anketler'),
@@ -107,7 +107,6 @@ Welcome As screen:
                     Statu: "Draft"
                 }
             )
-            */
         Visible: =showButton
         X: =1297
         Y: =528

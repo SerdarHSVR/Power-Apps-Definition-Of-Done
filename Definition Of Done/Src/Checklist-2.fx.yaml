@@ -271,15 +271,6 @@
             Y: =92
             ZIndex: =7
 
-    Icon5_1 As icon.Add:
-        Height: =30
-        Icon: =Icon.Add
-        OnSelect: =Navigate(CreateChecklist)
-        Width: =30
-        X: =1323
-        Y: =95
-        ZIndex: =16
-
     "answerBar_1 As gallery.'BrowseLayout_Horizontal_TwoTextOneImageVariant_ver4.0'":
         DelayItemLoading: =true
         Height: =16
@@ -300,15 +291,6 @@
             Width: =answerBar_1.TemplateWidth
             Y: =2
             ZIndex: =4
-
-    Icon1_2 As icon.Edit:
-        Height: =30
-        Icon: =Icon.Edit
-        OnSelect: =Navigate(editQuestions)
-        Width: =30
-        X: =1300
-        Y: =95
-        ZIndex: =18
 
     goToSurveyPageBT_3 As button:
         DisplayMode: =If(Not(IsEmpty(Cl_majorcategory)) && Not(IsEmpty(Cl_minorcategory)) && Not(IsEmpty(Cl_prioritization)), DisplayMode.Edit,DisplayMode.Disabled)
