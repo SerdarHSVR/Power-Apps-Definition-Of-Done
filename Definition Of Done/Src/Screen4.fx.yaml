@@ -1,7 +1,7 @@
 Screen4 As screen:
 
     Label4 As label:
-        Height: =646
+        Height: =709
         Overflow: =Overflow.Scroll
         Text: |-
             ="Sellaamm,
@@ -22,6 +22,7 @@ Screen4 As screen:
             Checklist -2 de, o bahsettiğimiz barı yaptım. İnceleyebilirsin. Kaç soru olacağı bilgisi alıp 1 den o soru sayısına kadar bir liste oluşturdum. Aynı sıra adımı soruların olduğu galeride de var. Galerideki her bir genişliği otomatik olarak galerinin bütün genişliğini soru sayısına bölerek elde ediyorum. Böylece soru sayısına göre barlar uygun olarak yer kaplıyor. Galerinin içine bir dikdörtgen ekledim. Bu dikdörtgenin genişliğini de galerideki bölümün genişliğine eşit aldım. Aşağıdaki sorulara verilen yes or yanıtlarını toplarken sorunun sıra numarasını toplayıp bardaki sıra numarası ile eşleşiyorsa renklendiriyorum. Yalnızca bir hata döndürüyor bazen o hatayı da düzeltirsek iyi olur. Çok detayllı bakmadım. Karışık gelmiş olabilir. Yüz yüze de anlatabilirim istersen. 
             
             Checklist sayfasındaki temel sıkıntı hani ana başlıklar var ya, html kodun içindekiler, orayı manual olarak =service =rapor gibi ifadeler girerek renklendirmişiz. Bunun daha otomatik bir haline ihtiyacımız var. Ne kadar title varsa o kadar renk üretecek felan bir koda ihtiyacımız var. 
+            Yine o sayfada düzenleme ve + butonları olmamalı, burası komple farklı bir akış çünkü. O tarafa geçiş için genel bir buton home'ın yanına felan ekleyebilriiz.
             
             CheckList -2 de bir de birşey denedim. Uygun olursa kullanabiliriz. pdf ile ilgili şu linkten yararlandım: https://www.youtube.com/watch?v=sK3WsjQiqcQ"
         Width: =1256
