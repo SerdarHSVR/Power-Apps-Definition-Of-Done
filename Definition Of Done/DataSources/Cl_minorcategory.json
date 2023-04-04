@@ -1,0 +1,9 @@
+[
+  {
+    "IsComponentScoped": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "Name": "Cl_minorcategory",
+    "Type": "CollectionDataSourceInfo"
+  }
+]

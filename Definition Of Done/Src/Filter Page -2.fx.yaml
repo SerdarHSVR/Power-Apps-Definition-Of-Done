@@ -1,0 +1,374 @@
+"'Filter Page -2' As screen":
+    Fill: =Theme.Fill
+
+    createQuestionPage_2 As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 0)
+        DisabledFill: =RGBA(255, 255, 255, 1)
+        DisplayMode: =DisplayMode.Disabled
+        Height: =109
+        Text: =""
+        Width: =1295
+        X: =40
+        Y: =364
+        ZIndex: =1
+
+    createQuestionPage_1 As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 0)
+        DisabledFill: =RGBA(255, 255, 255, 1)
+        DisplayMode: =DisplayMode.Disabled
+        Height: =109
+        Text: =""
+        Width: =1295
+        X: =40
+        Y: =199
+        ZIndex: =2
+
+    goToSurveyPageBT_2 As button:
+        DisplayMode: =If(Not(IsEmpty(Cl_majorcategory)) && Not(IsEmpty(Cl_minorcategory)) && Not(IsEmpty(Cl_prioritization)), DisplayMode.Edit,DisplayMode.Disabled)
+        Fill: =RGBA(103, 133, 193, 1)
+        Height: =52
+        OnSelect: |-
+            =ClearCollect(cl_checklist_selection,Filter(
+                cl_checklist,
+                NeKadarGerekli in Cl_prioritization,
+                AnaBa_x015f_l_x0131_k in Cl_majorcategory,
+                AltBa_x015f_l_x0131_k in Cl_minorcategory.MinorCategory,
+                Statu = "in-service"
+            ));
+            
+            ClearCollect(
+                cl_checklist_selection,
+                ForAll(Sequence(CountRows(cl_checklist_selection),1,1), 
+            Patch(Last(FirstN(cl_checklist_selection,Value)),{RowNumber:Value})));
+            Navigate(Checklist)
+        Text: ="Go to Survey"
+        Tooltip: ="İlerlemek için seçin"
+        Width: =168
+        X: =1170
+        Y: =682
+        ZIndex: =3
+
+    sample_nttlogo_4 As image:
+        Height: =sample_nttlogo.Height
+        Image: =sample_nttlogo.Image
+        Width: =sample_nttlogo.Width
+        X: =sample_nttlogo.X
+        ZIndex: =4
+
+    Rectangle1_6 As rectangle:
+        BorderColor: =RGBA(103, 133, 193, 1)
+        Fill: =RGBA(103, 133, 193, 1)
+        Height: =48
+        Width: =3
+        X: =193
+        Y: =12
+        ZIndex: =5
+
+    Label1_8 As label:
+        FontWeight: =FontWeight.Semibold
+        Height: =44
+        Size: =16
+        Text: ="Select Checklist Detail"
+        Width: =413
+        X: =209
+        Y: =12
+        ZIndex: =6
+
+    HtmlText1_1 As htmlViewer:
+        Height: =44
+        HtmlText: |-
+            ="<b>For: </b>" & reportName.Text
+        Size: =13
+        Width: =215
+        X: =40
+        Y: =80
+        ZIndex: =7
+
+    Label7 As label:
+        FontWeight: =FontWeight.Semibold
+        Text: ="Major Category"
+        X: =40
+        Y: =158
+        ZIndex: =12
+
+    Gallery6_2 As gallery.galleryHorizontal:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        Height: =108
+        Items: =Distinct(cl_checklist,AnaBa_x015f_l_x0131_k)
+        TemplateFill: =RGBA(0; 0; 0; 0)
+        TemplateSize: =114
+        Width: =1280
+        X: =40
+        Y: =200
+        ZIndex: =13
+
+        Button8_3 As button:
+            BorderColor: |-
+                =If(ThisItem.Value in Cl_majorcategory, RGBA(43, 172, 74,0.4),
+                RGBA(179, 179, 179, 0.31))
+            BorderStyle: |-
+                =If(Self.BorderColor=RGBA(255, 200, 87, 1) || Self.BorderColor=RGBA(230, 29, 43, 1),BorderStyle.Dotted,
+                 If(ThisItem.Value in Cl_majorcategory   ,BorderStyle.Dotted, BorderStyle.Solid))
+            BorderThickness: =3
+            Color: =RGBA(47, 54, 57, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            Fill: |-
+                =If(ThisItem.Value in Cl_majorcategory, RGBA(43, 172, 74,0.4),
+                RGBA(255, 255, 255, 1))
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            FocusedBorderThickness: =2
+            Font: =Font.'Segoe UI'
+            Height: =89
+            HoverBorderColor: =RGBA(179, 0, 0, 0)
+            HoverColor: =RGBA(0, 0, 0, 1)
+            HoverFill: =RGBA(43, 172, 74, 0.2)
+            OnSelect: |-
+                =If(ThisItem.Value in Cl_majorcategory, RemoveIf(Cl_majorcategory, MajorCategory=ThisItem.Value); RemoveIf(Cl_minorcategory,MajorCategory=ThisItem.Value), Collect(Cl_majorcategory, {MajorCategory:ThisItem.Value}))
+            PressedBorderColor: =RGBA(230, 230, 230, 0.91)
+            PressedColor: =RGBA(36, 42, 44, 1)
+            PressedFill: =RGBA(43, 172, 74, 1)
+            Size: =10
+            Text: =ThisItem.Value
+            Width: =112
+            Y: =2
+            ZIndex: =3
+
+    Gallery6_3 As gallery.galleryHorizontal:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        Height: =128
+        Items: =GroupBy(Filter(cl_checklist,AnaBa_x015f_l_x0131_k in Cl_majorcategory),"AltBa_x015f_l_x0131_k","AnaBa_x015f_l_x0131_k","GroupedItems")
+        TemplateFill: =RGBA(0; 0; 0; 0)
+        TemplateSize: =114
+        Width: =1280
+        X: =40
+        Y: =367
+        ZIndex: =14
+
+        Button8_4 As button:
+            BorderColor: |-
+                =If(ThisItem.AltBa_x015f_l_x0131_k in Cl_minorcategory.MinorCategory, RGBA(43, 172, 74,0.4),
+                RGBA(179, 179, 179, 0.31))
+            BorderStyle: |-
+                =If(Self.BorderColor=RGBA(255, 200, 87, 1) || Self.BorderColor=RGBA(230, 29, 43, 1),BorderStyle.Dotted,
+                 If(ThisItem.AltBa_x015f_l_x0131_k in Cl_minorcategory.MinorCategory,BorderStyle.Dotted, BorderStyle.Solid))
+            BorderThickness: =3
+            Color: =RGBA(47, 54, 57, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            Fill: |-
+                =If(ThisItem.AltBa_x015f_l_x0131_k in Cl_minorcategory.MinorCategory, RGBA(43, 172, 74,0.4),
+                RGBA(255, 255, 255, 1))
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            FocusedBorderThickness: =2
+            Font: =Font.'Segoe UI'
+            Height: =89
+            HoverBorderColor: =RGBA(179, 0, 0, 0)
+            HoverColor: =RGBA(0, 0, 0, 1)
+            HoverFill: =RGBA(43, 172, 74, 0.2)
+            OnSelect: |-
+                =If(ThisItem.AltBa_x015f_l_x0131_k in Cl_minorcategory.MinorCategory, 
+                    RemoveIf(Cl_minorcategory, MinorCategory=ThisItem.AltBa_x015f_l_x0131_k), 
+                        Collect(Cl_minorcategory,
+                         {MinorCategory:ThisItem.AltBa_x015f_l_x0131_k,
+                          MajorCategory:ThisItem.AnaBa_x015f_l_x0131_k }))
+            PressedBorderColor: =RGBA(230, 230, 230, 0.91)
+            PressedColor: =RGBA(36, 42, 44, 1)
+            PressedFill: =RGBA(43, 172, 74, 1)
+            Size: =10
+            Text: =ThisItem.AltBa_x015f_l_x0131_k
+            Width: =112
+            Y: =2
+            ZIndex: =3
+
+    Label7_1 As label:
+        FontWeight: =FontWeight.Semibold
+        Text: ="Minor Category"
+        X: =43
+        Y: =327
+        ZIndex: =15
+
+    Checkbox1 As checkbox:
+        CheckboxBorderColor: =RGBA(166, 166, 166, 1)
+        CheckboxSize: =25
+        CheckmarkFill: =RGBA(141, 198, 63, 1)
+        FocusedBorderThickness: =0
+        Height: =38
+        HoverBorderColor: =
+        OnCheck: |-
+            =ForAll(Distinct(cl_checklist,AnaBa_x015f_l_x0131_k),
+            Collect(Cl_majorcategory,{MajorCategory:Value}))
+        OnUncheck: =Clear(Cl_majorcategory)
+        PressedBorderColor: =
+        Size: =11
+        Text: ="Select All"
+        X: =190
+        Y: =159
+        ZIndex: =16
+
+    Checkbox1_1 As checkbox:
+        CheckboxBorderColor: =RGBA(166, 166, 166, 1)
+        CheckboxSize: =25
+        CheckmarkFill: =RGBA(141, 198, 63, 1)
+        DisplayMode: =If(CountRows(Cl_majorcategory)>0, DisplayMode.Edit,DisplayMode.Disabled)
+        FocusedBorderThickness: =0
+        Height: =38
+        HoverBorderColor: =
+        OnCheck: |-
+            =ForAll(GroupBy(Filter(cl_checklist,AnaBa_x015f_l_x0131_k in Cl_majorcategory),"AltBa_x015f_l_x0131_k","AnaBa_x015f_l_x0131_k","GroupedItems"),
+            Collect(Cl_minorcategory,
+                     {MinorCategory:AltBa_x015f_l_x0131_k,
+                      MajorCategory:AnaBa_x015f_l_x0131_k}))
+        OnUncheck: =Clear(Cl_minorcategory)
+        PressedBorderColor: =
+        Size: =11
+        Text: ="Select All"
+        X: =190
+        Y: =329
+        ZIndex: =17
+
+    createQuestionPage_3 As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 0)
+        DisabledFill: =RGBA(255, 255, 255, 1)
+        DisplayMode: =DisplayMode.Disabled
+        Height: =109
+        Text: =""
+        Width: =1295
+        X: =43
+        Y: =555
+        ZIndex: =18
+
+    Label7_2 As label:
+        FontWeight: =FontWeight.Semibold
+        Height: =39
+        Text: ="MoSCoW Prioritization"
+        Width: =212
+        X: =43
+        Y: =514
+        ZIndex: =19
+
+    Gallery6_4 As gallery.galleryHorizontal:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        Height: =108
+        Items: =GroupBy(Filter(cl_checklist,AnaBa_x015f_l_x0131_k in Cl_majorcategory, AltBa_x015f_l_x0131_k in Cl_minorcategory.MinorCategory),"NeKadarGerekli",  "GroupedItems")
+        TemplateFill: =RGBA(0; 0; 0; 0)
+        TemplateSize: =114
+        Width: =1280
+        X: =43
+        Y: =556
+        ZIndex: =20
+
+        Button8_5 As button:
+            BorderColor: |-
+                =If(ThisItem.NeKadarGerekli in Cl_prioritization, RGBA(43, 172, 74,0.4),
+                RGBA(179, 179, 179, 0.31))
+            BorderStyle: |-
+                =If(Self.BorderColor=RGBA(255, 200, 87, 1) || Self.BorderColor=RGBA(230, 29, 43, 1),BorderStyle.Dotted,
+                 If(ThisItem.NeKadarGerekli in Cl_prioritization   ,BorderStyle.Dotted, BorderStyle.Solid))
+            BorderThickness: =3
+            Color: =RGBA(47, 54, 57, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            Fill: |-
+                =If(ThisItem.NeKadarGerekli in Cl_prioritization, RGBA(43, 172, 74,0.4),
+                RGBA(255, 255, 255, 1))
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            FocusedBorderThickness: =2
+            Font: =Font.'Segoe UI'
+            Height: =89
+            HoverBorderColor: =RGBA(179, 0, 0, 0)
+            HoverColor: =RGBA(0, 0, 0, 1)
+            HoverFill: =RGBA(43, 172, 74, 0.2)
+            OnSelect: |-
+                =If(ThisItem.NeKadarGerekli in Cl_prioritization, RemoveIf(Cl_prioritization,Prioritization=ThisItem.NeKadarGerekli),Collect(Cl_prioritization, {Prioritization:ThisItem.NeKadarGerekli}))
+            PressedBorderColor: =RGBA(230, 230, 230, 0.91)
+            PressedColor: =RGBA(36, 42, 44, 1)
+            PressedFill: =RGBA(43, 172, 74, 1)
+            Size: =10
+            Text: =ThisItem.NeKadarGerekli
+            Width: =112
+            Y: =2
+            ZIndex: =3
+
+    Checkbox1_2 As checkbox:
+        CheckboxBorderColor: =RGBA(166, 166, 166, 1)
+        CheckboxSize: =25
+        CheckmarkFill: =RGBA(141, 198, 63, 1)
+        FocusedBorderThickness: =0
+        Height: =38
+        HoverBorderColor: =
+        OnCheck: |-
+            =ForAll(Distinct(cl_checklist,NeKadarGerekli),
+            Collect(Cl_prioritization,{Prioritization:Value}))
+        OnUncheck: =Clear(Cl_prioritization)
+        PressedBorderColor: =
+        Size: =11
+        Text: ="Select All"
+        X: =266
+        Y: =515
+        ZIndex: =21
+
+    lbl_CountRows_Checklist As label:
+        Height: =39
+        Text: |-
+            =CountRows(Filter(
+                cl_checklist,
+                NeKadarGerekli in Cl_prioritization,
+                AnaBa_x015f_l_x0131_k in Cl_majorcategory,
+                AltBa_x015f_l_x0131_k in Cl_minorcategory.MinorCategory,
+                Statu = "in-service"
+            ))
+        Visible: =VisibleSecretItems
+        Width: =65
+        X: =937
+        Y: =725
+        ZIndex: =22
+
+    Group2_1 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =31
+        ZIndex: =23
+
+        "'name-surname_7' As label":
+            Align: =Align.Right
+            FontWeight: =FontWeight.Semibold
+            Height: =27
+            Size: =14
+            Text: =User().FullName
+            Width: =156
+            X: =1097
+            Y: =19
+            ZIndex: =8
+
+        profilImage_8 As image:
+            Height: =45
+            Image: =User().Image
+            RadiusBottomLeft: =70
+            RadiusBottomRight: =70
+            RadiusTopLeft: =70
+            RadiusTopRight: =70
+            Width: =45
+            X: =1262
+            Y: =19
+            ZIndex: =9
+
+        email_1 As label:
+            Align: =Align.Right
+            Color: =RGBA(149, 149, 149, 1)
+            Height: =27
+            Size: =12
+            Text: =User().Email
+            Width: =251
+            X: =1002
+            Y: =46
+            ZIndex: =10
+
+        homeBT_1 As icon.Home:
+            Color: =RGBA(0, 0, 0, 1)
+            Height: =35
+            Icon: =Icon.Home
+            OnSelect: =Navigate(Welcome)
+            Width: =35
+            X: =1321
+            Y: =25
+            ZIndex: =11
+

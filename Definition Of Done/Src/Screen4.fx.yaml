@@ -1,0 +1,18 @@
+Screen4 As screen:
+
+    Label4 As label:
+        Height: =646
+        Overflow: =Overflow.Scroll
+        Text: |-
+            ="Sellaamm,
+            Uygulamaya şöyle bir göz attım, 
+            Welcome sayfasında,
+            bence choose platform ifadesinin, dropdown ın ve butonun visible ini true yapalım. Rapor ismi girdikten sonra boşluğa tıklaması gerekiyor ya o kullancıda burada bir bug var heralde izlenimi yaratıyor. 
+            Bu sayfadaki butona bir kontrol ekleyelim. Rapor ismi girmeden de tıklayabilsin ancak butona basıldığında eğer rapor ismi alanı boşsa uyarı çıkartsın ve input alanının borderini kırmızı yapsın. İçine yazmaya başladıktan sonra borderi düzelebilir.
+            
+            "
+        Width: =1256
+        X: =40
+        Y: =40
+        ZIndex: =1
+

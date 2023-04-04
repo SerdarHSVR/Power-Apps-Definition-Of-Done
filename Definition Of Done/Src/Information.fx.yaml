@@ -10,6 +10,8 @@ Information As screen:
 
     Toggle_nesnelerigoster As toggleSwitch:
         FalseText: ="Nesneleri Gizle"
+        OnCheck: =Set(VisibleSecretItems,true)
+        OnUncheck: =Set(VisibleSecretItems,false)
         TrueText: ="Nesneleri Göster"
         Width: =221
         X: =1134
