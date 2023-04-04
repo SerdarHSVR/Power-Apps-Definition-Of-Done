@@ -10,9 +10,19 @@ Screen4 As screen:
             bence choose platform ifadesinin, dropdown ın ve butonun visible ini true yapalım. Rapor ismi girdikten sonra boşluğa tıklaması gerekiyor ya o kullancıda burada bir bug var heralde izlenimi yaratıyor. 
             Bu sayfadaki butona bir kontrol ekleyelim. Rapor ismi girmeden de tıklayabilsin ancak butona basıldığında eğer rapor ismi alanı boşsa uyarı çıkartsın ve input alanının borderini kırmızı yapsın. İçine yazmaya başladıktan sonra borderi düzelebilir.
             Butonda guidtext e atama yapıyorsun ama bizim kaydedecek birşeyimiz yok, kullanıcı kendisi yeni bir liste oluşturmadığı takdirde. Bu sebeple kodu yeni bir liste oluşturma sayfasında oluşturmak daha doğru olacaktır.
+            Platform isimlerinin dropdownda distinct alırken, anketler ve sorumlular listesinden almakta yarar var. Bu tablo diğerine daha göre daha az büyüyecek. Distinct yoran bir fonksiyondur. Bu şekilde ilerde daha performanslı çalışır.
+            Bu sayfadan kişinin kendi sayfasına gitmesini sağlayan bir buton güzel olacaktır.
+            Sharepoint listesinden veri çekme işlemi yavaştır. Eğe girişte biz içerikleri collectiona atarsak uygulama kendi içinde çok daha performanslı çalışacaktır.
+            Örnek sayfa -> Welcome Page -2
             
+            Benden beklediğin Filtre sayfası: Filter Page -2. Sayfayı umarım beğenirsin. Bu sayfayı tekrar yapmaya çalışırsan senin için oldukça faydalı olacaktır. 
+            Bu sayfada select all 'ın farklı kombinasyonlarla çalışması biraz sorunlu. Bazı seçimler seçili kalıyor ya da tikin kaldırılması gerekiyor gibi durumlar var, inceleyip bir düzenleme yaparsan bu da harika olur.
             
-            "
+            Checklist -2 de, o bahsettiğimiz barı yaptım. İnceleyebilirsin. Kaç soru olacağı bilgisi alıp 1 den o soru sayısına kadar bir liste oluşturdum. Aynı sıra adımı soruların olduğu galeride de var. Galerideki her bir genişliği otomatik olarak galerinin bütün genişliğini soru sayısına bölerek elde ediyorum. Böylece soru sayısına göre barlar uygun olarak yer kaplıyor. Galerinin içine bir dikdörtgen ekledim. Bu dikdörtgenin genişliğini de galerideki bölümün genişliğine eşit aldım. Aşağıdaki sorulara verilen yes or yanıtlarını toplarken sorunun sıra numarasını toplayıp bardaki sıra numarası ile eşleşiyorsa renklendiriyorum. Karışık gelmiş olabilir. Yüz yüze de anlatabilirim istersen. 
+            
+            Checklist sayfasındaki temel sıkıntı hani ana başlıklar var ya, html kodun içindekiler, orayı manual olarak =service =rapor gibi ifadeler girerek renklendirmişiz. Bunun daha otomatik bir haline ihtiyacımız var. Ne kadar title varsa o kadar renk üretecek felan bir koda ihtiyacımız var. 
+            
+            CheckList -2 de bir de birşey denedim. Uygun olursa kullanabiliriz. pdf ile ilgili "
         Width: =1256
         X: =40
         Y: =40
