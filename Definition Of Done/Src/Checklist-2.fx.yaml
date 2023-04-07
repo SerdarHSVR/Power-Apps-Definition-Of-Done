@@ -99,13 +99,16 @@
             Items: =["Yes","No"]
             Layout: =Layout.Horizontal
             OnChange: |-
-                =Collect(cl_answers,
-                {
-                AnaBaslik:ThisItem.AnaBa_x015f_l_x0131_k
-                ,AltBaslik: ThisItem.AltBa_x015f_l_x0131_k
-                ,Soru:ThisItem.Soru
-                ,Answer: Self.SelectedText
-                ,RowNumber:ThisItem.RowNumber})
+                =Collect(
+                    cl_answers,
+                    {
+                        AnaBaslik: ThisItem.AnaBa_x015f_l_x0131_k,
+                        AltBaslik: ThisItem.AltBa_x015f_l_x0131_k,
+                        Soru: ThisItem.Soru,
+                        Answer: Self.SelectedText,
+                        RowNumber: ThisItem.RowNumber
+                    }
+                )
             OnSelect: |-
                 =UpdateContext({selectedQuestion: answerButton_2})
             PaddingTop: =5
@@ -217,7 +220,7 @@
         Color: =RGBA(0, 0, 0, 1)
         Height: =35
         Icon: =Icon.BackArrow
-        OnSelect: =Navigate('Filiter Page')
+        OnSelect: =Navigate('Filter Page -2')
         Width: =35
         X: =1219
         Y: =19
@@ -232,43 +235,6 @@
         X: =27
         Y: =97
         ZIndex: =14
-
-    "'Number of Answers_2' As group":
-        Height: =5
-        Width: =5
-        X: =27
-        Y: =40
-        ZIndex: =15
-
-        yesCount_2 As label:
-            Height: =39
-            Text: |-
-                ="Number of Yes: " & CountIf(questionGallery_3.AllItems, answerButton.Selected.Value = "Yes")
-            Visible: =Toggle_nesnelerigoster.Value
-            Width: =190
-            X: =955
-            Y: =51
-            ZIndex: =5
-
-        noCount_2 As label:
-            Height: =22
-            Text: |-
-                ="Number of No: " & CountIf(questionGallery_3.AllItems, answerButton.Selected.Value = "No")
-            Visible: =Toggle_nesnelerigoster.Value
-            Width: =191
-            X: =955
-            Y: =81
-            ZIndex: =6
-
-        emptyCount_2 As label:
-            Height: =41
-            Text: |-
-                ="Number of Empty: " & CountIf(questionGallery_3.AllItems, IsBlank(answerButton.Selected.Value))
-            Visible: =Toggle_nesnelerigoster.Value
-            Width: =190
-            X: =955
-            Y: =92
-            ZIndex: =7
 
     "answerBar_1 As gallery.'BrowseLayout_Horizontal_TwoTextOneImageVariant_ver4.0'":
         DelayItemLoading: =true
@@ -310,7 +276,7 @@
         Size: =32
         Text: =platformSelect_1.Selected.Value
         Width: =303
-        X: =576
+        X: =532
         ZIndex: =21
 
     Icon5_1 As icon.Add:

@@ -7,7 +7,7 @@ Screen4 As screen:
             ="Sellaamm,
             Uygulamaya şöyle bir göz attım, 
             Welcome sayfasında,
-            bence choose platform ifadesinin, dropdown ın ve butonun visible ini true yapalım. Rapor ismi girdikten sonra boşluğa tıklaması gerekiyor ya o kullancıda burada bir bug var heralde izlenimi yaratıyor. 
+             
             Bu sayfadaki butona bir kontrol ekleyelim. Rapor ismi girmeden de tıklayabilsin ancak butona basıldığında eğer rapor ismi alanı boşsa uyarı çıkartsın ve input alanının borderini kırmızı yapsın. İçine yazmaya başladıktan sonra borderi düzelebilir.
             Butonda guidtext e atama yapıyorsun ama bizim kaydedecek birşeyimiz yok, kullanıcı kendisi yeni bir liste oluşturmadığı takdirde. Bu sebeple kodu yeni bir liste oluşturma sayfasında oluşturmak daha doğru olacaktır. 
             Aynı şekilde bu sayfadan bir kayıt atmıyoruz listeye o yüzden buradaki patch i de kaldırabiliriz.
