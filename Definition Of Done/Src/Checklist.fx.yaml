@@ -20,7 +20,7 @@ Checklist As screen:
         Font: =Font.Arial
         Height: =77
         Size: =32
-        Text: =platformSelect.SelectedText.Value
+        Text: =platformSelect_1.Selected.Value
         Width: =303
         X: =576
         ZIndex: =2
@@ -199,7 +199,7 @@ Checklist As screen:
     powerBIreportName_3 As label:
         Height: =25
         Size: =12
-        Text: =reportName.Text
+        Text: =reportName_2.Text
         Width: =177
         X: =196
         Y: =39
@@ -222,7 +222,7 @@ Checklist As screen:
         Color: =RGBA(0, 0, 0, 1)
         Height: =35
         Icon: =Icon.Home
-        OnSelect: =Navigate(Welcome)
+        OnSelect: =Navigate('Welcome Page -2')
         Width: =35
         X: =1259
         Y: =20
