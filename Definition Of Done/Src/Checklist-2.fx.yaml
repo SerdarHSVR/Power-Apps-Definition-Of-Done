@@ -124,28 +124,28 @@
                     <tr>
                       <td style='text-align:center; border-color: #e6e6e6; color:#ffffff; 
                           background-color: " & If(
-                    ThisItem.'Ana Başlık' = "Service",
+                    ThisItem.AnaBa_x015f_l_x0131_k = "Service",
                     "#0080B1",
                     If(
-                        ThisItem.'Ana Başlık' = "Rapor",
+                        ThisItem.AnaBa_x015f_l_x0131_k = "Rapor",
                         "#6785C1",
                         If(
-                            ThisItem.'Ana Başlık' = "Documentation",
+                            ThisItem.AnaBa_x015f_l_x0131_k = "Documentation",
                             "#0A2075",
                             "#4B3F72"
                         )
                     )
                 ) & "; 
                           border-style: solid; border-radius: 15px; border-width: 2px; font-size:x-small'>
-                          " & ThisItem.'Ana Başlık' & "
+                          " & ThisItem.AnaBa_x015f_l_x0131_k & "
                       </td>
-                      <td style='text-align:center; border-color: #e6e6e6; color:#ffffff; background-color: #4B3F72; border-style: solid; border-radius: 15px; border-width: 2px; font-size:x-small'>" & ThisItem.'Alt Başlık' & "</td>
+                      <td style='text-align:center; border-color: #e6e6e6; color:#ffffff; background-color: #4B3F72; border-style: solid; border-radius: 15px; border-width: 2px; font-size:x-small'>" & ThisItem.AltBa_x015f_l_x0131_k & "</td>
                       <td style='text-align:center; border-color: #e6e6e6; color:#ffffff; border-style: solid; border-radius: 15px; border-width: 2px; font-size:x-small; 
                       background-color: " & If(
-                    ThisItem.'Ne Kadar Gerekli' = "Must",
+                    ThisItem.NeKadarGerekli = "Must",
                     "#BC4328",
                     "#83B254"
-                ) & "'>" & ThisItem.'Ne Kadar Gerekli' & "</td>
+                ) & "'>" & ThisItem.NeKadarGerekli & "</td>
                     </tr>
                   </table>
                 </html>"
@@ -178,7 +178,6 @@
         Text: ="Checklist"
         Width: =246
         X: =193
-        Y: =11
         ZIndex: =9
 
     powerBIreportName_4 As label:
@@ -187,7 +186,7 @@
         Text: |-
             ="Report Name:" & reportName_2.Text
         Width: =223
-        X: =193
+        X: =190
         Y: =38
         ZIndex: =10
 
@@ -313,4 +312,51 @@
         Width: =303
         X: =576
         ZIndex: =21
+
+    Icon5_1 As icon.Add:
+        Height: =30
+        Icon: =Icon.Add
+        OnSelect: =Navigate(CreateChecklist)
+        Width: =30
+        X: =1316
+        Y: =93
+        ZIndex: =22
+
+    Icon1_2 As icon.Edit:
+        Height: =30
+        Icon: =Icon.Edit
+        OnSelect: =Navigate(editQuestions)
+        Width: =30
+        X: =1286
+        Y: =93
+        ZIndex: =23
+
+    downloadBT_1 As icon.Download:
+        Height: =30
+        Icon: =Icon.Download
+        OnSelect: |-
+            =Set(
+                MyAnswers,
+                questionGallery_3.AllItems
+            );
+            Concurrent(
+                Notify(
+                    "Generating CSV File...",
+                    NotificationType.Information
+                ),
+                Set(
+                    csvFileUrl,
+                    DefinitionOfDoneCSV.Run(
+                        JSON(
+                            MyAnswers,
+                            JSONFormat.IgnoreBinaryData & JSONFormat.IgnoreUnsupportedTypes
+                        )
+                    ).fileurl
+                )
+            );
+            Launch(csvFileUrl)
+        Width: =30
+        X: =1249
+        Y: =90
+        ZIndex: =24
 

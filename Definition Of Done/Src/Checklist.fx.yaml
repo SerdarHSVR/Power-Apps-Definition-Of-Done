@@ -311,8 +311,8 @@ Checklist As screen:
         TemplatePadding: =0
         TemplateSize: =12
         Width: =1334
-        X: =13
-        Y: =77
+        X: =32
+        Y: =63
         ZIndex: =19
 
         Rectangle3_1 As rectangle:

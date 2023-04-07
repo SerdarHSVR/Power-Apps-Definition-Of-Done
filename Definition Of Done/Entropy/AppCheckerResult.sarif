@@ -251,450 +251,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Checklist-2'.questionGallery_3.HtmlText2_2.HtmlText"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Checklist-2'.questionGallery_3.HtmlText2_2.HtmlText",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 13,
-                  "charOffset": 173,
-                  "snippet": {
-                    "text": ".'Ana Başlık'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "HtmlText",
-                "module": "Checklist-2",
-                "type": "'Checklist-2'.questionGallery_3.HtmlText2_2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Ana Başlık"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Checklist-2'.questionGallery_3.HtmlText2_2.HtmlText"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Checklist-2'.questionGallery_3.HtmlText2_2.HtmlText",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 187,
-                  "snippet": {
-                    "text": "="
-                  }
-                }
-              },
-              "properties": {
-                "member": "HtmlText",
-                "module": "Checklist-2",
-                "type": "'Checklist-2'.questionGallery_3.HtmlText2_2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Error",
-              "Text"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Checklist-2'.questionGallery_3.HtmlText2_2.HtmlText"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Checklist-2'.questionGallery_3.HtmlText2_2.HtmlText",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 13,
-                  "charOffset": 242,
-                  "snippet": {
-                    "text": ".'Ana Başlık'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "HtmlText",
-                "module": "Checklist-2",
-                "type": "'Checklist-2'.questionGallery_3.HtmlText2_2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Ana Başlık"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Checklist-2'.questionGallery_3.HtmlText2_2.HtmlText"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Checklist-2'.questionGallery_3.HtmlText2_2.HtmlText",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 256,
-                  "snippet": {
-                    "text": "="
-                  }
-                }
-              },
-              "properties": {
-                "member": "HtmlText",
-                "module": "Checklist-2",
-                "type": "'Checklist-2'.questionGallery_3.HtmlText2_2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Error",
-              "Text"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Checklist-2'.questionGallery_3.HtmlText2_2.HtmlText"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Checklist-2'.questionGallery_3.HtmlText2_2.HtmlText",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 13,
-                  "charOffset": 321,
-                  "snippet": {
-                    "text": ".'Ana Başlık'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "HtmlText",
-                "module": "Checklist-2",
-                "type": "'Checklist-2'.questionGallery_3.HtmlText2_2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Ana Başlık"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Checklist-2'.questionGallery_3.HtmlText2_2.HtmlText"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Checklist-2'.questionGallery_3.HtmlText2_2.HtmlText",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 335,
-                  "snippet": {
-                    "text": "="
-                  }
-                }
-              },
-              "properties": {
-                "member": "HtmlText",
-                "module": "Checklist-2",
-                "type": "'Checklist-2'.questionGallery_3.HtmlText2_2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Error",
-              "Text"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Checklist-2'.questionGallery_3.HtmlText2_2.HtmlText"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Checklist-2'.questionGallery_3.HtmlText2_2.HtmlText",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 13,
-                  "charOffset": 543,
-                  "snippet": {
-                    "text": ".'Ana Başlık'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "HtmlText",
-                "module": "Checklist-2",
-                "type": "'Checklist-2'.questionGallery_3.HtmlText2_2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Ana Başlık"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Checklist-2'.questionGallery_3.HtmlText2_2.HtmlText"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Checklist-2'.questionGallery_3.HtmlText2_2.HtmlText",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 13,
-                  "charOffset": 768,
-                  "snippet": {
-                    "text": ".'Alt Başlık'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "HtmlText",
-                "module": "Checklist-2",
-                "type": "'Checklist-2'.questionGallery_3.HtmlText2_2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Alt Başlık"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Checklist-2'.questionGallery_3.HtmlText2_2.HtmlText"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Checklist-2'.questionGallery_3.HtmlText2_2.HtmlText",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 19,
-                  "charOffset": 993,
-                  "snippet": {
-                    "text": ".'Ne Kadar Gerekli'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "HtmlText",
-                "module": "Checklist-2",
-                "type": "'Checklist-2'.questionGallery_3.HtmlText2_2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Ne Kadar Gerekli"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Checklist-2'.questionGallery_3.HtmlText2_2.HtmlText"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Checklist-2'.questionGallery_3.HtmlText2_2.HtmlText",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 1013,
-                  "snippet": {
-                    "text": "="
-                  }
-                }
-              },
-              "properties": {
-                "member": "HtmlText",
-                "module": "Checklist-2",
-                "type": "'Checklist-2'.questionGallery_3.HtmlText2_2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Error",
-              "Text"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Checklist-2'.questionGallery_3.HtmlText2_2.HtmlText"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Checklist-2'.questionGallery_3.HtmlText2_2.HtmlText",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 19,
-                  "charOffset": 1074,
-                  "snippet": {
-                    "text": ".'Ne Kadar Gerekli'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "HtmlText",
-                "module": "Checklist-2",
-                "type": "'Checklist-2'.questionGallery_3.HtmlText2_2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Ne Kadar Gerekli"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "Checklist.answerBar.Items"
                 }
               ],
@@ -5312,6 +4868,186 @@
                 "member": "TabIndex",
                 "module": "Checklist-2",
                 "type": "'Checklist-2'.HomePageBT_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 10
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Checklist-2'.Icon5_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Checklist-2'.Icon5_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Checklist-2",
+                "type": "'Checklist-2'.Icon5_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Checklist-2'.Icon5_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Checklist-2'.Icon5_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Checklist-2",
+                "type": "'Checklist-2'.Icon5_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 10
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Checklist-2'.Icon1_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Checklist-2'.Icon1_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Checklist-2",
+                "type": "'Checklist-2'.Icon1_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Checklist-2'.Icon1_2.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Checklist-2'.Icon1_2.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Checklist-2",
+                "type": "'Checklist-2'.Icon1_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 10
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Checklist-2'.downloadBT_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Checklist-2'.downloadBT_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Checklist-2",
+                "type": "'Checklist-2'.downloadBT_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Checklist-2'.downloadBT_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Checklist-2'.downloadBT_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Checklist-2",
+                "type": "'Checklist-2'.downloadBT_1"
               }
             }
           ],
