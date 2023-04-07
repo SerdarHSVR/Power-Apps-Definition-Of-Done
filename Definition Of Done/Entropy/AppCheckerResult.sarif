@@ -5359,6 +5359,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "'Checklist-2'.platformName_2.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Checklist-2'.platformName_2.Text",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "Checklist-2",
+                "type": "'Checklist-2'.platformName_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 14
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "EditQuestions.Fill"
                 }
               ],
