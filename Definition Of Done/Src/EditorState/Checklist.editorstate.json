@@ -62,7 +62,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "answerBar_1",
-      "ParentIndex": 5,
+      "ParentIndex": 10,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -511,7 +511,7 @@
       "StyleName": "defaultRadioStyle",
       "Type": "ControlInfo"
     },
-    "Checklist-2": {
+    "Checklist": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -538,18 +538,13 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "Checklist-2",
+      "Name": "Checklist",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
           "Category": "Design",
-          "PropertyName": "Width",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "Height",
+          "PropertyName": "Fill",
           "RuleProviderType": "Unknown"
         },
         {
@@ -559,17 +554,12 @@
         },
         {
           "Category": "Design",
-          "PropertyName": "Fill",
+          "PropertyName": "Height",
           "RuleProviderType": "Unknown"
         },
         {
           "Category": "Design",
-          "PropertyName": "LoadingSpinner",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "LoadingSpinnerColor",
+          "PropertyName": "Width",
           "RuleProviderType": "Unknown"
         },
         {
@@ -580,6 +570,16 @@
         {
           "Category": "Design",
           "PropertyName": "Orientation",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "LoadingSpinner",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "LoadingSpinnerColor",
           "RuleProviderType": "Unknown"
         }
       ],
@@ -666,7 +666,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ChecklistPage_1",
-      "ParentIndex": 16,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -870,7 +870,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "createQuestionPage_4",
-      "ParentIndex": 10,
+      "ParentIndex": 15,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1111,7 +1111,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "downloadBT_1",
-      "ParentIndex": 6,
+      "ParentIndex": 11,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1379,7 +1379,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "goToSurveyPageBT_3",
-      "ParentIndex": 12,
+      "ParentIndex": 17,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2170,7 +2170,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Icon1_2",
-      "ParentIndex": 7,
+      "ParentIndex": 12,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2370,7 +2370,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Icon2_2",
-      "ParentIndex": 15,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2556,7 +2556,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Icon5_1",
-      "ParentIndex": 8,
+      "ParentIndex": 13,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2757,7 +2757,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label6_1",
-      "ParentIndex": 9,
+      "ParentIndex": 14,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3047,7 +3047,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label8_4",
-      "ParentIndex": 17,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3330,7 +3330,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "name-surname_6",
-      "ParentIndex": 13,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4704,7 +4704,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "powerBIreportName_4",
-      "ParentIndex": 4,
+      "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5019,7 +5019,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "profilImage_6",
-      "ParentIndex": 14,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5217,7 +5217,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "questionGallery_3",
-      "ParentIndex": 11,
+      "ParentIndex": 16,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5626,7 +5626,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Rectangle1_5",
-      "ParentIndex": 3,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6176,5 +6176,5 @@
       "Type": "ControlInfo"
     }
   },
-  "TopParentName": "Checklist-2"
+  "TopParentName": "Checklist"
 }

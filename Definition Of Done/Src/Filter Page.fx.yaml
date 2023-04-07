@@ -1,4 +1,4 @@
-"'Filter Page -2' As screen":
+"'Filter Page' As screen":
     Fill: =Theme.Fill
 
     createQuestionPage_2 As button:
@@ -40,7 +40,7 @@
                 cl_checklist_selection,
                 ForAll(Sequence(CountRows(cl_checklist_selection),1,1), 
             Patch(Last(FirstN(cl_checklist_selection,Value)),{RowNumber:Value})));
-            Navigate(Checklist)
+            Navigate(ChecklistPage_1)
         Text: ="Go to Survey"
         Tooltip: ="İlerlemek için seçin"
         Width: =168
@@ -366,7 +366,7 @@
             Color: =RGBA(0, 0, 0, 1)
             Height: =35
             Icon: =Icon.Home
-            OnSelect: =Navigate('Welcome Page -2')
+            OnSelect: =Navigate('Welcome Page')
             Width: =35
             X: =1321
             Y: =25

@@ -1,4 +1,4 @@
-"'Checklist-2' As screen":
+Checklist As screen:
     Fill: =Theme.Fill
 
     createQuestionPage_4 As button:
@@ -297,7 +297,7 @@
         Color: =RGBA(0, 0, 0, 1)
         Height: =40
         Icon: =Icon.Home
-        OnSelect: =Navigate('Welcome Page -2')
+        OnSelect: =Navigate('Welcome Page')
         Width: =40
         X: =1315
         Y: =5
@@ -307,7 +307,7 @@
         Color: =RGBA(0, 0, 0, 1)
         Height: =35
         Icon: =Icon.BackArrow
-        OnSelect: =Navigate('Checklist-2')
+        OnSelect: =Navigate(Checklist)
         Width: =35
         X: =1280
         Y: =10

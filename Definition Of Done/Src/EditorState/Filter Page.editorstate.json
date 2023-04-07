@@ -3374,7 +3374,7 @@
       "StyleName": "defaultLabelStyle",
       "Type": "ControlInfo"
     },
-    "Filter Page -2": {
+    "Filter Page": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -3401,18 +3401,13 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "Filter Page -2",
+      "Name": "Filter Page",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
           "Category": "Design",
-          "PropertyName": "Width",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "Height",
+          "PropertyName": "Fill",
           "RuleProviderType": "Unknown"
         },
         {
@@ -3422,17 +3417,12 @@
         },
         {
           "Category": "Design",
-          "PropertyName": "Fill",
+          "PropertyName": "Height",
           "RuleProviderType": "Unknown"
         },
         {
           "Category": "Design",
-          "PropertyName": "LoadingSpinner",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "LoadingSpinnerColor",
+          "PropertyName": "Width",
           "RuleProviderType": "Unknown"
         },
         {
@@ -3443,6 +3433,16 @@
         {
           "Category": "Design",
           "PropertyName": "Orientation",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "LoadingSpinner",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "LoadingSpinnerColor",
           "RuleProviderType": "Unknown"
         }
       ],
@@ -7080,5 +7080,5 @@
       "Type": "ControlInfo"
     }
   },
-  "TopParentName": "Filter Page -2"
+  "TopParentName": "Filter Page"
 }

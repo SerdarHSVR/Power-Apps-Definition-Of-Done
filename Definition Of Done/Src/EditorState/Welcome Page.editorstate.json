@@ -2440,7 +2440,7 @@
       "StyleName": "defaultTextStyle",
       "Type": "ControlInfo"
     },
-    "Welcome Page -2": {
+    "Welcome Page": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "Fill",
@@ -2468,7 +2468,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "Welcome Page -2",
+      "Name": "Welcome Page",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -2479,12 +2479,7 @@
         },
         {
           "Category": "Design",
-          "PropertyName": "LoadingSpinner",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "Width",
+          "PropertyName": "ImagePosition",
           "RuleProviderType": "Unknown"
         },
         {
@@ -2494,17 +2489,12 @@
         },
         {
           "Category": "Design",
-          "PropertyName": "ImagePosition",
+          "PropertyName": "Width",
           "RuleProviderType": "Unknown"
         },
         {
           "Category": "Design",
-          "PropertyName": "LoadingSpinnerColor",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "Fill",
+          "PropertyName": "LoadingSpinner",
           "RuleProviderType": "Unknown"
         },
         {
@@ -2516,11 +2506,21 @@
           "Category": "Design",
           "PropertyName": "Orientation",
           "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "LoadingSpinnerColor",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Fill",
+          "RuleProviderType": "Unknown"
         }
       ],
       "StyleName": "defaultScreenStyle",
       "Type": "ControlInfo"
     }
   },
-  "TopParentName": "Welcome Page -2"
+  "TopParentName": "Welcome Page"
 }

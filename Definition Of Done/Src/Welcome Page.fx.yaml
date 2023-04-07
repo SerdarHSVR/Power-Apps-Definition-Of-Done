@@ -1,4 +1,4 @@
-"'Welcome Page -2' As screen":
+"'Welcome Page' As screen":
     BackgroundImage: ='ntt-data-teams-bg-5 (1) (1)'
 
     Label2_2 As label:
@@ -88,7 +88,7 @@
         Fill: =RGBA(255, 255, 255, 1)
         OnSelect: |-
             =Navigate(
-                'Filter Page -2',
+                'Filter Page',
                 ScreenTransition.None
             );
             

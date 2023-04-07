@@ -14,12 +14,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Checklist-2'.answerBar_1.Items"
+                  "fullyQualifiedName": "Checklist.answerBar_1.Items"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Checklist-2'.answerBar_1.Items",
+                  "fullyQualifiedName": "Checklist.answerBar_1.Items",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -32,8 +32,8 @@
               },
               "properties": {
                 "member": "Items",
-                "module": "Checklist-2",
-                "type": "'Checklist-2'.answerBar_1"
+                "module": "Checklist",
+                "type": "Checklist.answerBar_1"
               }
             }
           ],
@@ -54,12 +54,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Checklist-2'.answerBar_1.TemplateSize"
+                  "fullyQualifiedName": "Checklist.answerBar_1.TemplateSize"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Checklist-2'.answerBar_1.TemplateSize",
+                  "fullyQualifiedName": "Checklist.answerBar_1.TemplateSize",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -72,8 +72,8 @@
               },
               "properties": {
                 "member": "TemplateSize",
-                "module": "Checklist-2",
-                "type": "'Checklist-2'.answerBar_1"
+                "module": "Checklist",
+                "type": "Checklist.answerBar_1"
               }
             }
           ],
@@ -94,12 +94,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Checklist-2'.answerBar_1.TemplateSize"
+                  "fullyQualifiedName": "Checklist.answerBar_1.TemplateSize"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Checklist-2'.answerBar_1.TemplateSize",
+                  "fullyQualifiedName": "Checklist.answerBar_1.TemplateSize",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -112,8 +112,8 @@
               },
               "properties": {
                 "member": "TemplateSize",
-                "module": "Checklist-2",
-                "type": "'Checklist-2'.answerBar_1"
+                "module": "Checklist",
+                "type": "Checklist.answerBar_1"
               }
             }
           ],
@@ -134,12 +134,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Checklist-2'.answerBar_1.Rectangle3_2.Fill"
+                  "fullyQualifiedName": "Checklist.answerBar_1.Rectangle3_2.Fill"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Checklist-2'.answerBar_1.Rectangle3_2.Fill",
+                  "fullyQualifiedName": "Checklist.answerBar_1.Rectangle3_2.Fill",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -152,8 +152,8 @@
               },
               "properties": {
                 "member": "Fill",
-                "module": "Checklist-2",
-                "type": "'Checklist-2'.answerBar_1.Rectangle3_2"
+                "module": "Checklist",
+                "type": "Checklist.answerBar_1.Rectangle3_2"
               }
             }
           ],
@@ -174,12 +174,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Checklist-2'.answerBar_1.Rectangle3_2.Fill"
+                  "fullyQualifiedName": "Checklist.answerBar_1.Rectangle3_2.Fill"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Checklist-2'.answerBar_1.Rectangle3_2.Fill",
+                  "fullyQualifiedName": "Checklist.answerBar_1.Rectangle3_2.Fill",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -192,8 +192,8 @@
               },
               "properties": {
                 "member": "Fill",
-                "module": "Checklist-2",
-                "type": "'Checklist-2'.answerBar_1.Rectangle3_2"
+                "module": "Checklist",
+                "type": "Checklist.answerBar_1.Rectangle3_2"
               }
             }
           ],
@@ -251,12 +251,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Filter Page -2'.Gallery6_2.galleryTemplate6_2.TemplateFill"
+                  "fullyQualifiedName": "'Filter Page'.Gallery6_2.galleryTemplate6_2.TemplateFill"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Filter Page -2'.Gallery6_2.galleryTemplate6_2.TemplateFill",
+                  "fullyQualifiedName": "'Filter Page'.Gallery6_2.galleryTemplate6_2.TemplateFill",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -269,8 +269,8 @@
               },
               "properties": {
                 "member": "TemplateFill",
-                "module": "Filter Page -2",
-                "type": "'Filter Page -2'.Gallery6_2.galleryTemplate6_2"
+                "module": "Filter Page",
+                "type": "'Filter Page'.Gallery6_2.galleryTemplate6_2"
               }
             }
           ],
@@ -288,12 +288,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Filter Page -2'.Gallery6_2.galleryTemplate6_2.TemplateFill"
+                  "fullyQualifiedName": "'Filter Page'.Gallery6_2.galleryTemplate6_2.TemplateFill"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Filter Page -2'.Gallery6_2.galleryTemplate6_2.TemplateFill",
+                  "fullyQualifiedName": "'Filter Page'.Gallery6_2.galleryTemplate6_2.TemplateFill",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -306,8 +306,8 @@
               },
               "properties": {
                 "member": "TemplateFill",
-                "module": "Filter Page -2",
-                "type": "'Filter Page -2'.Gallery6_2.galleryTemplate6_2"
+                "module": "Filter Page",
+                "type": "'Filter Page'.Gallery6_2.galleryTemplate6_2"
               }
             }
           ],
@@ -325,12 +325,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Filter Page -2'.Gallery6_2.galleryTemplate6_2.TemplateFill"
+                  "fullyQualifiedName": "'Filter Page'.Gallery6_2.galleryTemplate6_2.TemplateFill"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Filter Page -2'.Gallery6_2.galleryTemplate6_2.TemplateFill",
+                  "fullyQualifiedName": "'Filter Page'.Gallery6_2.galleryTemplate6_2.TemplateFill",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -343,8 +343,8 @@
               },
               "properties": {
                 "member": "TemplateFill",
-                "module": "Filter Page -2",
-                "type": "'Filter Page -2'.Gallery6_2.galleryTemplate6_2"
+                "module": "Filter Page",
+                "type": "'Filter Page'.Gallery6_2.galleryTemplate6_2"
               }
             }
           ],
@@ -362,12 +362,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Filter Page -2'.Gallery6_2.galleryTemplate6_2.TemplateFill"
+                  "fullyQualifiedName": "'Filter Page'.Gallery6_2.galleryTemplate6_2.TemplateFill"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Filter Page -2'.Gallery6_2.galleryTemplate6_2.TemplateFill",
+                  "fullyQualifiedName": "'Filter Page'.Gallery6_2.galleryTemplate6_2.TemplateFill",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -380,8 +380,8 @@
               },
               "properties": {
                 "member": "TemplateFill",
-                "module": "Filter Page -2",
-                "type": "'Filter Page -2'.Gallery6_2.galleryTemplate6_2"
+                "module": "Filter Page",
+                "type": "'Filter Page'.Gallery6_2.galleryTemplate6_2"
               }
             }
           ],
@@ -399,12 +399,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Filter Page -2'.Gallery6_2.galleryTemplate6_2.TemplateFill"
+                  "fullyQualifiedName": "'Filter Page'.Gallery6_2.galleryTemplate6_2.TemplateFill"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Filter Page -2'.Gallery6_2.galleryTemplate6_2.TemplateFill",
+                  "fullyQualifiedName": "'Filter Page'.Gallery6_2.galleryTemplate6_2.TemplateFill",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -417,8 +417,8 @@
               },
               "properties": {
                 "member": "TemplateFill",
-                "module": "Filter Page -2",
-                "type": "'Filter Page -2'.Gallery6_2.galleryTemplate6_2"
+                "module": "Filter Page",
+                "type": "'Filter Page'.Gallery6_2.galleryTemplate6_2"
               }
             }
           ],
@@ -436,12 +436,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Filter Page -2'.Gallery6_2.galleryTemplate6_2.TemplateFill"
+                  "fullyQualifiedName": "'Filter Page'.Gallery6_2.galleryTemplate6_2.TemplateFill"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Filter Page -2'.Gallery6_2.galleryTemplate6_2.TemplateFill",
+                  "fullyQualifiedName": "'Filter Page'.Gallery6_2.galleryTemplate6_2.TemplateFill",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -454,8 +454,8 @@
               },
               "properties": {
                 "member": "TemplateFill",
-                "module": "Filter Page -2",
-                "type": "'Filter Page -2'.Gallery6_2.galleryTemplate6_2"
+                "module": "Filter Page",
+                "type": "'Filter Page'.Gallery6_2.galleryTemplate6_2"
               }
             }
           ],
@@ -473,12 +473,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Filter Page -2'.Gallery6_2.galleryTemplate6_2.TemplateFill"
+                  "fullyQualifiedName": "'Filter Page'.Gallery6_2.galleryTemplate6_2.TemplateFill"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Filter Page -2'.Gallery6_2.galleryTemplate6_2.TemplateFill",
+                  "fullyQualifiedName": "'Filter Page'.Gallery6_2.galleryTemplate6_2.TemplateFill",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -491,8 +491,8 @@
               },
               "properties": {
                 "member": "TemplateFill",
-                "module": "Filter Page -2",
-                "type": "'Filter Page -2'.Gallery6_2.galleryTemplate6_2"
+                "module": "Filter Page",
+                "type": "'Filter Page'.Gallery6_2.galleryTemplate6_2"
               }
             }
           ],
@@ -514,12 +514,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Filter Page -2'.Gallery6_3.galleryTemplate6_3.TemplateFill"
+                  "fullyQualifiedName": "'Filter Page'.Gallery6_3.galleryTemplate6_3.TemplateFill"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Filter Page -2'.Gallery6_3.galleryTemplate6_3.TemplateFill",
+                  "fullyQualifiedName": "'Filter Page'.Gallery6_3.galleryTemplate6_3.TemplateFill",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -532,8 +532,8 @@
               },
               "properties": {
                 "member": "TemplateFill",
-                "module": "Filter Page -2",
-                "type": "'Filter Page -2'.Gallery6_3.galleryTemplate6_3"
+                "module": "Filter Page",
+                "type": "'Filter Page'.Gallery6_3.galleryTemplate6_3"
               }
             }
           ],
@@ -551,12 +551,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Filter Page -2'.Gallery6_3.galleryTemplate6_3.TemplateFill"
+                  "fullyQualifiedName": "'Filter Page'.Gallery6_3.galleryTemplate6_3.TemplateFill"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Filter Page -2'.Gallery6_3.galleryTemplate6_3.TemplateFill",
+                  "fullyQualifiedName": "'Filter Page'.Gallery6_3.galleryTemplate6_3.TemplateFill",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -569,8 +569,8 @@
               },
               "properties": {
                 "member": "TemplateFill",
-                "module": "Filter Page -2",
-                "type": "'Filter Page -2'.Gallery6_3.galleryTemplate6_3"
+                "module": "Filter Page",
+                "type": "'Filter Page'.Gallery6_3.galleryTemplate6_3"
               }
             }
           ],
@@ -588,12 +588,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Filter Page -2'.Gallery6_3.galleryTemplate6_3.TemplateFill"
+                  "fullyQualifiedName": "'Filter Page'.Gallery6_3.galleryTemplate6_3.TemplateFill"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Filter Page -2'.Gallery6_3.galleryTemplate6_3.TemplateFill",
+                  "fullyQualifiedName": "'Filter Page'.Gallery6_3.galleryTemplate6_3.TemplateFill",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -606,8 +606,8 @@
               },
               "properties": {
                 "member": "TemplateFill",
-                "module": "Filter Page -2",
-                "type": "'Filter Page -2'.Gallery6_3.galleryTemplate6_3"
+                "module": "Filter Page",
+                "type": "'Filter Page'.Gallery6_3.galleryTemplate6_3"
               }
             }
           ],
@@ -625,12 +625,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Filter Page -2'.Gallery6_3.galleryTemplate6_3.TemplateFill"
+                  "fullyQualifiedName": "'Filter Page'.Gallery6_3.galleryTemplate6_3.TemplateFill"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Filter Page -2'.Gallery6_3.galleryTemplate6_3.TemplateFill",
+                  "fullyQualifiedName": "'Filter Page'.Gallery6_3.galleryTemplate6_3.TemplateFill",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -643,8 +643,8 @@
               },
               "properties": {
                 "member": "TemplateFill",
-                "module": "Filter Page -2",
-                "type": "'Filter Page -2'.Gallery6_3.galleryTemplate6_3"
+                "module": "Filter Page",
+                "type": "'Filter Page'.Gallery6_3.galleryTemplate6_3"
               }
             }
           ],
@@ -662,12 +662,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Filter Page -2'.Gallery6_3.galleryTemplate6_3.TemplateFill"
+                  "fullyQualifiedName": "'Filter Page'.Gallery6_3.galleryTemplate6_3.TemplateFill"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Filter Page -2'.Gallery6_3.galleryTemplate6_3.TemplateFill",
+                  "fullyQualifiedName": "'Filter Page'.Gallery6_3.galleryTemplate6_3.TemplateFill",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -680,8 +680,8 @@
               },
               "properties": {
                 "member": "TemplateFill",
-                "module": "Filter Page -2",
-                "type": "'Filter Page -2'.Gallery6_3.galleryTemplate6_3"
+                "module": "Filter Page",
+                "type": "'Filter Page'.Gallery6_3.galleryTemplate6_3"
               }
             }
           ],
@@ -699,12 +699,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Filter Page -2'.Gallery6_3.galleryTemplate6_3.TemplateFill"
+                  "fullyQualifiedName": "'Filter Page'.Gallery6_3.galleryTemplate6_3.TemplateFill"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Filter Page -2'.Gallery6_3.galleryTemplate6_3.TemplateFill",
+                  "fullyQualifiedName": "'Filter Page'.Gallery6_3.galleryTemplate6_3.TemplateFill",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -717,8 +717,8 @@
               },
               "properties": {
                 "member": "TemplateFill",
-                "module": "Filter Page -2",
-                "type": "'Filter Page -2'.Gallery6_3.galleryTemplate6_3"
+                "module": "Filter Page",
+                "type": "'Filter Page'.Gallery6_3.galleryTemplate6_3"
               }
             }
           ],
@@ -736,12 +736,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Filter Page -2'.Gallery6_3.galleryTemplate6_3.TemplateFill"
+                  "fullyQualifiedName": "'Filter Page'.Gallery6_3.galleryTemplate6_3.TemplateFill"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Filter Page -2'.Gallery6_3.galleryTemplate6_3.TemplateFill",
+                  "fullyQualifiedName": "'Filter Page'.Gallery6_3.galleryTemplate6_3.TemplateFill",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -754,8 +754,8 @@
               },
               "properties": {
                 "member": "TemplateFill",
-                "module": "Filter Page -2",
-                "type": "'Filter Page -2'.Gallery6_3.galleryTemplate6_3"
+                "module": "Filter Page",
+                "type": "'Filter Page'.Gallery6_3.galleryTemplate6_3"
               }
             }
           ],
@@ -777,12 +777,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Filter Page -2'.Gallery6_4.galleryTemplate6_4.TemplateFill"
+                  "fullyQualifiedName": "'Filter Page'.Gallery6_4.galleryTemplate6_4.TemplateFill"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Filter Page -2'.Gallery6_4.galleryTemplate6_4.TemplateFill",
+                  "fullyQualifiedName": "'Filter Page'.Gallery6_4.galleryTemplate6_4.TemplateFill",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -795,8 +795,8 @@
               },
               "properties": {
                 "member": "TemplateFill",
-                "module": "Filter Page -2",
-                "type": "'Filter Page -2'.Gallery6_4.galleryTemplate6_4"
+                "module": "Filter Page",
+                "type": "'Filter Page'.Gallery6_4.galleryTemplate6_4"
               }
             }
           ],
@@ -814,12 +814,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Filter Page -2'.Gallery6_4.galleryTemplate6_4.TemplateFill"
+                  "fullyQualifiedName": "'Filter Page'.Gallery6_4.galleryTemplate6_4.TemplateFill"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Filter Page -2'.Gallery6_4.galleryTemplate6_4.TemplateFill",
+                  "fullyQualifiedName": "'Filter Page'.Gallery6_4.galleryTemplate6_4.TemplateFill",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -832,8 +832,8 @@
               },
               "properties": {
                 "member": "TemplateFill",
-                "module": "Filter Page -2",
-                "type": "'Filter Page -2'.Gallery6_4.galleryTemplate6_4"
+                "module": "Filter Page",
+                "type": "'Filter Page'.Gallery6_4.galleryTemplate6_4"
               }
             }
           ],
@@ -851,12 +851,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Filter Page -2'.Gallery6_4.galleryTemplate6_4.TemplateFill"
+                  "fullyQualifiedName": "'Filter Page'.Gallery6_4.galleryTemplate6_4.TemplateFill"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Filter Page -2'.Gallery6_4.galleryTemplate6_4.TemplateFill",
+                  "fullyQualifiedName": "'Filter Page'.Gallery6_4.galleryTemplate6_4.TemplateFill",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -869,8 +869,8 @@
               },
               "properties": {
                 "member": "TemplateFill",
-                "module": "Filter Page -2",
-                "type": "'Filter Page -2'.Gallery6_4.galleryTemplate6_4"
+                "module": "Filter Page",
+                "type": "'Filter Page'.Gallery6_4.galleryTemplate6_4"
               }
             }
           ],
@@ -888,12 +888,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Filter Page -2'.Gallery6_4.galleryTemplate6_4.TemplateFill"
+                  "fullyQualifiedName": "'Filter Page'.Gallery6_4.galleryTemplate6_4.TemplateFill"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Filter Page -2'.Gallery6_4.galleryTemplate6_4.TemplateFill",
+                  "fullyQualifiedName": "'Filter Page'.Gallery6_4.galleryTemplate6_4.TemplateFill",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -906,8 +906,8 @@
               },
               "properties": {
                 "member": "TemplateFill",
-                "module": "Filter Page -2",
-                "type": "'Filter Page -2'.Gallery6_4.galleryTemplate6_4"
+                "module": "Filter Page",
+                "type": "'Filter Page'.Gallery6_4.galleryTemplate6_4"
               }
             }
           ],
@@ -925,12 +925,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Filter Page -2'.Gallery6_4.galleryTemplate6_4.TemplateFill"
+                  "fullyQualifiedName": "'Filter Page'.Gallery6_4.galleryTemplate6_4.TemplateFill"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Filter Page -2'.Gallery6_4.galleryTemplate6_4.TemplateFill",
+                  "fullyQualifiedName": "'Filter Page'.Gallery6_4.galleryTemplate6_4.TemplateFill",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -943,8 +943,8 @@
               },
               "properties": {
                 "member": "TemplateFill",
-                "module": "Filter Page -2",
-                "type": "'Filter Page -2'.Gallery6_4.galleryTemplate6_4"
+                "module": "Filter Page",
+                "type": "'Filter Page'.Gallery6_4.galleryTemplate6_4"
               }
             }
           ],
@@ -962,12 +962,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Filter Page -2'.Gallery6_4.galleryTemplate6_4.TemplateFill"
+                  "fullyQualifiedName": "'Filter Page'.Gallery6_4.galleryTemplate6_4.TemplateFill"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Filter Page -2'.Gallery6_4.galleryTemplate6_4.TemplateFill",
+                  "fullyQualifiedName": "'Filter Page'.Gallery6_4.galleryTemplate6_4.TemplateFill",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -980,8 +980,8 @@
               },
               "properties": {
                 "member": "TemplateFill",
-                "module": "Filter Page -2",
-                "type": "'Filter Page -2'.Gallery6_4.galleryTemplate6_4"
+                "module": "Filter Page",
+                "type": "'Filter Page'.Gallery6_4.galleryTemplate6_4"
               }
             }
           ],
@@ -999,12 +999,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Filter Page -2'.Gallery6_4.galleryTemplate6_4.TemplateFill"
+                  "fullyQualifiedName": "'Filter Page'.Gallery6_4.galleryTemplate6_4.TemplateFill"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Filter Page -2'.Gallery6_4.galleryTemplate6_4.TemplateFill",
+                  "fullyQualifiedName": "'Filter Page'.Gallery6_4.galleryTemplate6_4.TemplateFill",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -1017,8 +1017,8 @@
               },
               "properties": {
                 "member": "TemplateFill",
-                "module": "Filter Page -2",
-                "type": "'Filter Page -2'.Gallery6_4.galleryTemplate6_4"
+                "module": "Filter Page",
+                "type": "'Filter Page'.Gallery6_4.galleryTemplate6_4"
               }
             }
           ],
@@ -1034,46 +1034,6 @@
           },
           "ruleId": "app-ErrBadArity",
           "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Filter Page -2'.goToSurveyPageBT_2.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Filter Page -2'.goToSurveyPageBT_2.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 9,
-                  "charOffset": 436,
-                  "snippet": {
-                    "text": "Checklist"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Filter Page -2",
-                "type": "'Filter Page -2'.goToSurveyPageBT_2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Checklist"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
         },
         {
           "locations": [
@@ -1619,19 +1579,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Checklist-2'.Icon2_2.TabIndex"
+                  "fullyQualifiedName": "Checklist.Icon2_2.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Checklist-2'.Icon2_2.TabIndex",
+                  "fullyQualifiedName": "Checklist.Icon2_2.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Checklist-2",
-                "type": "'Checklist-2'.Icon2_2"
+                "module": "Checklist",
+                "type": "Checklist.Icon2_2"
               }
             }
           ],
@@ -1649,19 +1609,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Checklist-2'.Icon2_2.AccessibleLabel"
+                  "fullyQualifiedName": "Checklist.Icon2_2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Checklist-2'.Icon2_2.AccessibleLabel",
+                  "fullyQualifiedName": "Checklist.Icon2_2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Checklist-2",
-                "type": "'Checklist-2'.Icon2_2"
+                "module": "Checklist",
+                "type": "Checklist.Icon2_2"
               }
             }
           ],
@@ -1679,19 +1639,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Checklist-2'.answerBar_1.AccessibleLabel"
+                  "fullyQualifiedName": "Checklist.answerBar_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Checklist-2'.answerBar_1.AccessibleLabel",
+                  "fullyQualifiedName": "Checklist.answerBar_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Checklist-2",
-                "type": "'Checklist-2'.answerBar_1"
+                "module": "Checklist",
+                "type": "Checklist.answerBar_1"
               }
             }
           ],
@@ -1709,19 +1669,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Checklist-2'.answerBar_1.TabIndex"
+                  "fullyQualifiedName": "Checklist.answerBar_1.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Checklist-2'.answerBar_1.TabIndex",
+                  "fullyQualifiedName": "Checklist.answerBar_1.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Checklist-2",
-                "type": "'Checklist-2'.answerBar_1"
+                "module": "Checklist",
+                "type": "Checklist.answerBar_1"
               }
             }
           ],
@@ -1739,19 +1699,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Checklist-2'.questionGallery_3.AccessibleLabel"
+                  "fullyQualifiedName": "Checklist.questionGallery_3.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Checklist-2'.questionGallery_3.AccessibleLabel",
+                  "fullyQualifiedName": "Checklist.questionGallery_3.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Checklist-2",
-                "type": "'Checklist-2'.questionGallery_3"
+                "module": "Checklist",
+                "type": "Checklist.questionGallery_3"
               }
             }
           ],
@@ -1769,19 +1729,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Checklist-2'.questionGallery_3.TabIndex"
+                  "fullyQualifiedName": "Checklist.questionGallery_3.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Checklist-2'.questionGallery_3.TabIndex",
+                  "fullyQualifiedName": "Checklist.questionGallery_3.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Checklist-2",
-                "type": "'Checklist-2'.questionGallery_3"
+                "module": "Checklist",
+                "type": "Checklist.questionGallery_3"
               }
             }
           ],
@@ -1799,19 +1759,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Checklist-2'.questionGallery_3.answerButton_2.AccessibleLabel"
+                  "fullyQualifiedName": "Checklist.questionGallery_3.answerButton_2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Checklist-2'.questionGallery_3.answerButton_2.AccessibleLabel",
+                  "fullyQualifiedName": "Checklist.questionGallery_3.answerButton_2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Checklist-2",
-                "type": "'Checklist-2'.questionGallery_3.answerButton_2"
+                "module": "Checklist",
+                "type": "Checklist.questionGallery_3.answerButton_2"
               }
             }
           ],
@@ -1829,19 +1789,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Checklist-2'.questionGallery_3.url_3.AccessibleLabel"
+                  "fullyQualifiedName": "Checklist.questionGallery_3.url_3.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Checklist-2'.questionGallery_3.url_3.AccessibleLabel",
+                  "fullyQualifiedName": "Checklist.questionGallery_3.url_3.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Checklist-2",
-                "type": "'Checklist-2'.questionGallery_3.url_3"
+                "module": "Checklist",
+                "type": "Checklist.questionGallery_3.url_3"
               }
             }
           ],
@@ -1859,19 +1819,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Checklist-2'.questionGallery_3.url_3.TabIndex"
+                  "fullyQualifiedName": "Checklist.questionGallery_3.url_3.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Checklist-2'.questionGallery_3.url_3.TabIndex",
+                  "fullyQualifiedName": "Checklist.questionGallery_3.url_3.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Checklist-2",
-                "type": "'Checklist-2'.questionGallery_3.url_3"
+                "module": "Checklist",
+                "type": "Checklist.questionGallery_3.url_3"
               }
             }
           ],
@@ -2009,19 +1969,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Filter Page -2'.homeBT_1.TabIndex"
+                  "fullyQualifiedName": "'Filter Page'.homeBT_1.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Filter Page -2'.homeBT_1.TabIndex",
+                  "fullyQualifiedName": "'Filter Page'.homeBT_1.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Filter Page -2",
-                "type": "'Filter Page -2'.homeBT_1"
+                "module": "Filter Page",
+                "type": "'Filter Page'.homeBT_1"
               }
             }
           ],
@@ -2039,19 +1999,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Filter Page -2'.homeBT_1.AccessibleLabel"
+                  "fullyQualifiedName": "'Filter Page'.homeBT_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Filter Page -2'.homeBT_1.AccessibleLabel",
+                  "fullyQualifiedName": "'Filter Page'.homeBT_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Filter Page -2",
-                "type": "'Filter Page -2'.homeBT_1"
+                "module": "Filter Page",
+                "type": "'Filter Page'.homeBT_1"
               }
             }
           ],
@@ -2849,19 +2809,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Welcome Page -2'.reportName_2.AccessibleLabel"
+                  "fullyQualifiedName": "'Welcome Page'.reportName_2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Welcome Page -2'.reportName_2.AccessibleLabel",
+                  "fullyQualifiedName": "'Welcome Page'.reportName_2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Welcome Page -2",
-                "type": "'Welcome Page -2'.reportName_2"
+                "module": "Welcome Page",
+                "type": "'Welcome Page'.reportName_2"
               }
             }
           ],
@@ -2879,19 +2839,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Welcome Page -2'.platformSelect_1.AccessibleLabel"
+                  "fullyQualifiedName": "'Welcome Page'.platformSelect_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Welcome Page -2'.platformSelect_1.AccessibleLabel",
+                  "fullyQualifiedName": "'Welcome Page'.platformSelect_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Welcome Page -2",
-                "type": "'Welcome Page -2'.platformSelect_1"
+                "module": "Welcome Page",
+                "type": "'Welcome Page'.platformSelect_1"
               }
             }
           ],
@@ -2909,19 +2869,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Welcome Page -2'.Arrow1_1.AccessibleLabel"
+                  "fullyQualifiedName": "'Welcome Page'.Arrow1_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Welcome Page -2'.Arrow1_1.AccessibleLabel",
+                  "fullyQualifiedName": "'Welcome Page'.Arrow1_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Welcome Page -2",
-                "type": "'Welcome Page -2'.Arrow1_1"
+                "module": "Welcome Page",
+                "type": "'Welcome Page'.Arrow1_1"
               }
             }
           ],
@@ -2939,19 +2899,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Welcome Page -2'.Arrow1_1.TabIndex"
+                  "fullyQualifiedName": "'Welcome Page'.Arrow1_1.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Welcome Page -2'.Arrow1_1.TabIndex",
+                  "fullyQualifiedName": "'Welcome Page'.Arrow1_1.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Welcome Page -2",
-                "type": "'Welcome Page -2'.Arrow1_1"
+                "module": "Welcome Page",
+                "type": "'Welcome Page'.Arrow1_1"
               }
             }
           ],
@@ -2969,19 +2929,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Filter Page -2'.Checkbox1.FocusedBorderThickness"
+                  "fullyQualifiedName": "'Filter Page'.Checkbox1.FocusedBorderThickness"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Filter Page -2'.Checkbox1.FocusedBorderThickness",
+                  "fullyQualifiedName": "'Filter Page'.Checkbox1.FocusedBorderThickness",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "FocusedBorderThickness",
-                "module": "Filter Page -2",
-                "type": "'Filter Page -2'.Checkbox1"
+                "module": "Filter Page",
+                "type": "'Filter Page'.Checkbox1"
               }
             }
           ],
@@ -2999,19 +2959,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Filter Page -2'.Gallery6_2.AccessibleLabel"
+                  "fullyQualifiedName": "'Filter Page'.Gallery6_2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Filter Page -2'.Gallery6_2.AccessibleLabel",
+                  "fullyQualifiedName": "'Filter Page'.Gallery6_2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Filter Page -2",
-                "type": "'Filter Page -2'.Gallery6_2"
+                "module": "Filter Page",
+                "type": "'Filter Page'.Gallery6_2"
               }
             }
           ],
@@ -3029,19 +2989,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Filter Page -2'.Gallery6_2.TabIndex"
+                  "fullyQualifiedName": "'Filter Page'.Gallery6_2.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Filter Page -2'.Gallery6_2.TabIndex",
+                  "fullyQualifiedName": "'Filter Page'.Gallery6_2.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Filter Page -2",
-                "type": "'Filter Page -2'.Gallery6_2"
+                "module": "Filter Page",
+                "type": "'Filter Page'.Gallery6_2"
               }
             }
           ],
@@ -3059,19 +3019,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Filter Page -2'.Checkbox1_1.FocusedBorderThickness"
+                  "fullyQualifiedName": "'Filter Page'.Checkbox1_1.FocusedBorderThickness"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Filter Page -2'.Checkbox1_1.FocusedBorderThickness",
+                  "fullyQualifiedName": "'Filter Page'.Checkbox1_1.FocusedBorderThickness",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "FocusedBorderThickness",
-                "module": "Filter Page -2",
-                "type": "'Filter Page -2'.Checkbox1_1"
+                "module": "Filter Page",
+                "type": "'Filter Page'.Checkbox1_1"
               }
             }
           ],
@@ -3089,19 +3049,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Filter Page -2'.Gallery6_3.AccessibleLabel"
+                  "fullyQualifiedName": "'Filter Page'.Gallery6_3.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Filter Page -2'.Gallery6_3.AccessibleLabel",
+                  "fullyQualifiedName": "'Filter Page'.Gallery6_3.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Filter Page -2",
-                "type": "'Filter Page -2'.Gallery6_3"
+                "module": "Filter Page",
+                "type": "'Filter Page'.Gallery6_3"
               }
             }
           ],
@@ -3119,19 +3079,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Filter Page -2'.Gallery6_3.TabIndex"
+                  "fullyQualifiedName": "'Filter Page'.Gallery6_3.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Filter Page -2'.Gallery6_3.TabIndex",
+                  "fullyQualifiedName": "'Filter Page'.Gallery6_3.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Filter Page -2",
-                "type": "'Filter Page -2'.Gallery6_3"
+                "module": "Filter Page",
+                "type": "'Filter Page'.Gallery6_3"
               }
             }
           ],
@@ -3149,19 +3109,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Filter Page -2'.Checkbox1_2.FocusedBorderThickness"
+                  "fullyQualifiedName": "'Filter Page'.Checkbox1_2.FocusedBorderThickness"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Filter Page -2'.Checkbox1_2.FocusedBorderThickness",
+                  "fullyQualifiedName": "'Filter Page'.Checkbox1_2.FocusedBorderThickness",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "FocusedBorderThickness",
-                "module": "Filter Page -2",
-                "type": "'Filter Page -2'.Checkbox1_2"
+                "module": "Filter Page",
+                "type": "'Filter Page'.Checkbox1_2"
               }
             }
           ],
@@ -3179,19 +3139,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Filter Page -2'.Gallery6_4.AccessibleLabel"
+                  "fullyQualifiedName": "'Filter Page'.Gallery6_4.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Filter Page -2'.Gallery6_4.AccessibleLabel",
+                  "fullyQualifiedName": "'Filter Page'.Gallery6_4.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Filter Page -2",
-                "type": "'Filter Page -2'.Gallery6_4"
+                "module": "Filter Page",
+                "type": "'Filter Page'.Gallery6_4"
               }
             }
           ],
@@ -3209,19 +3169,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Filter Page -2'.Gallery6_4.TabIndex"
+                  "fullyQualifiedName": "'Filter Page'.Gallery6_4.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Filter Page -2'.Gallery6_4.TabIndex",
+                  "fullyQualifiedName": "'Filter Page'.Gallery6_4.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Filter Page -2",
-                "type": "'Filter Page -2'.Gallery6_4"
+                "module": "Filter Page",
+                "type": "'Filter Page'.Gallery6_4"
               }
             }
           ],
@@ -3239,19 +3199,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Checklist-2'.ChecklistPage_1.TabIndex"
+                  "fullyQualifiedName": "Checklist.ChecklistPage_1.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Checklist-2'.ChecklistPage_1.TabIndex",
+                  "fullyQualifiedName": "Checklist.ChecklistPage_1.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Checklist-2",
-                "type": "'Checklist-2'.ChecklistPage_1"
+                "module": "Checklist",
+                "type": "Checklist.ChecklistPage_1"
               }
             }
           ],
@@ -3269,19 +3229,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Checklist-2'.ChecklistPage_1.AccessibleLabel"
+                  "fullyQualifiedName": "Checklist.ChecklistPage_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Checklist-2'.ChecklistPage_1.AccessibleLabel",
+                  "fullyQualifiedName": "Checklist.ChecklistPage_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Checklist-2",
-                "type": "'Checklist-2'.ChecklistPage_1"
+                "module": "Checklist",
+                "type": "Checklist.ChecklistPage_1"
               }
             }
           ],
@@ -3299,19 +3259,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Checklist-2'.Icon5_1.AccessibleLabel"
+                  "fullyQualifiedName": "Checklist.Icon5_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Checklist-2'.Icon5_1.AccessibleLabel",
+                  "fullyQualifiedName": "Checklist.Icon5_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Checklist-2",
-                "type": "'Checklist-2'.Icon5_1"
+                "module": "Checklist",
+                "type": "Checklist.Icon5_1"
               }
             }
           ],
@@ -3329,19 +3289,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Checklist-2'.Icon5_1.TabIndex"
+                  "fullyQualifiedName": "Checklist.Icon5_1.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Checklist-2'.Icon5_1.TabIndex",
+                  "fullyQualifiedName": "Checklist.Icon5_1.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Checklist-2",
-                "type": "'Checklist-2'.Icon5_1"
+                "module": "Checklist",
+                "type": "Checklist.Icon5_1"
               }
             }
           ],
@@ -3359,19 +3319,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Checklist-2'.Icon1_2.AccessibleLabel"
+                  "fullyQualifiedName": "Checklist.Icon1_2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Checklist-2'.Icon1_2.AccessibleLabel",
+                  "fullyQualifiedName": "Checklist.Icon1_2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Checklist-2",
-                "type": "'Checklist-2'.Icon1_2"
+                "module": "Checklist",
+                "type": "Checklist.Icon1_2"
               }
             }
           ],
@@ -3389,19 +3349,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Checklist-2'.Icon1_2.TabIndex"
+                  "fullyQualifiedName": "Checklist.Icon1_2.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Checklist-2'.Icon1_2.TabIndex",
+                  "fullyQualifiedName": "Checklist.Icon1_2.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Checklist-2",
-                "type": "'Checklist-2'.Icon1_2"
+                "module": "Checklist",
+                "type": "Checklist.Icon1_2"
               }
             }
           ],
@@ -3419,19 +3379,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Checklist-2'.downloadBT_1.AccessibleLabel"
+                  "fullyQualifiedName": "Checklist.downloadBT_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Checklist-2'.downloadBT_1.AccessibleLabel",
+                  "fullyQualifiedName": "Checklist.downloadBT_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Checklist-2",
-                "type": "'Checklist-2'.downloadBT_1"
+                "module": "Checklist",
+                "type": "Checklist.downloadBT_1"
               }
             }
           ],
@@ -3449,19 +3409,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Checklist-2'.downloadBT_1.TabIndex"
+                  "fullyQualifiedName": "Checklist.downloadBT_1.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Checklist-2'.downloadBT_1.TabIndex",
+                  "fullyQualifiedName": "Checklist.downloadBT_1.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Checklist-2",
-                "type": "'Checklist-2'.downloadBT_1"
+                "module": "Checklist",
+                "type": "Checklist.downloadBT_1"
               }
             }
           ],
@@ -3509,19 +3469,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Checklist-2'.platformName_2.Text"
+                  "fullyQualifiedName": "Checklist.platformName_2.Text"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Checklist-2'.platformName_2.Text",
+                  "fullyQualifiedName": "Checklist.platformName_2.Text",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "Text",
-                "module": "Checklist-2",
-                "type": "'Checklist-2'.platformName_2"
+                "module": "Checklist",
+                "type": "Checklist.platformName_2"
               }
             }
           ],
@@ -3749,19 +3709,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Checklist-2'.selectedQuestion"
+                  "fullyQualifiedName": "Checklist.selectedQuestion"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Checklist-2'.selectedQuestion",
+                  "fullyQualifiedName": "Checklist.selectedQuestion",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "selectedQuestion",
-                "module": "Checklist-2",
-                "type": "'Checklist-2'"
+                "module": "Checklist",
+                "type": "Checklist"
               }
             }
           ],
@@ -3779,19 +3739,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Checklist-2'.Fill"
+                  "fullyQualifiedName": "Checklist.Fill"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Checklist-2'.Fill",
+                  "fullyQualifiedName": "Checklist.Fill",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "Fill",
-                "module": "Checklist-2",
-                "type": "'Checklist-2'"
+                "module": "Checklist",
+                "type": "Checklist"
               }
             }
           ],
@@ -3809,19 +3769,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Checklist-2'.nttLogo_7.Image"
+                  "fullyQualifiedName": "Checklist.nttLogo_7.Image"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Checklist-2'.nttLogo_7.Image",
+                  "fullyQualifiedName": "Checklist.nttLogo_7.Image",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "Image",
-                "module": "Checklist-2",
-                "type": "'Checklist-2'.nttLogo_7"
+                "module": "Checklist",
+                "type": "Checklist.nttLogo_7"
               }
             }
           ],
@@ -3839,19 +3799,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Checklist-2'.nttLogo_7.X"
+                  "fullyQualifiedName": "Checklist.nttLogo_7.X"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Checklist-2'.nttLogo_7.X",
+                  "fullyQualifiedName": "Checklist.nttLogo_7.X",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "X",
-                "module": "Checklist-2",
-                "type": "'Checklist-2'.nttLogo_7"
+                "module": "Checklist",
+                "type": "Checklist.nttLogo_7"
               }
             }
           ],
@@ -3869,19 +3829,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Checklist-2'.nttLogo_7.Y"
+                  "fullyQualifiedName": "Checklist.nttLogo_7.Y"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Checklist-2'.nttLogo_7.Y",
+                  "fullyQualifiedName": "Checklist.nttLogo_7.Y",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "Y",
-                "module": "Checklist-2",
-                "type": "'Checklist-2'.nttLogo_7"
+                "module": "Checklist",
+                "type": "Checklist.nttLogo_7"
               }
             }
           ],
@@ -3899,19 +3859,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Checklist-2'.nttLogo_7.Width"
+                  "fullyQualifiedName": "Checklist.nttLogo_7.Width"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Checklist-2'.nttLogo_7.Width",
+                  "fullyQualifiedName": "Checklist.nttLogo_7.Width",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "Width",
-                "module": "Checklist-2",
-                "type": "'Checklist-2'.nttLogo_7"
+                "module": "Checklist",
+                "type": "Checklist.nttLogo_7"
               }
             }
           ],
@@ -3929,19 +3889,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Checklist-2'.nttLogo_7.Height"
+                  "fullyQualifiedName": "Checklist.nttLogo_7.Height"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Checklist-2'.nttLogo_7.Height",
+                  "fullyQualifiedName": "Checklist.nttLogo_7.Height",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "Height",
-                "module": "Checklist-2",
-                "type": "'Checklist-2'.nttLogo_7"
+                "module": "Checklist",
+                "type": "Checklist.nttLogo_7"
               }
             }
           ],
@@ -3959,19 +3919,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Checklist-2'.powerBIreportName_4.Text"
+                  "fullyQualifiedName": "Checklist.powerBIreportName_4.Text"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Checklist-2'.powerBIreportName_4.Text",
+                  "fullyQualifiedName": "Checklist.powerBIreportName_4.Text",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "Text",
-                "module": "Checklist-2",
-                "type": "'Checklist-2'.powerBIreportName_4"
+                "module": "Checklist",
+                "type": "Checklist.powerBIreportName_4"
               }
             }
           ],
@@ -4079,19 +4039,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Welcome Page -2'.showButton"
+                  "fullyQualifiedName": "'Welcome Page'.showButton"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Welcome Page -2'.showButton",
+                  "fullyQualifiedName": "'Welcome Page'.showButton",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "showButton",
-                "module": "Welcome Page -2",
-                "type": "'Welcome Page -2'"
+                "module": "Welcome Page",
+                "type": "'Welcome Page'"
               }
             }
           ],
@@ -4109,19 +4069,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Filter Page -2'.Fill"
+                  "fullyQualifiedName": "'Filter Page'.Fill"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Filter Page -2'.Fill",
+                  "fullyQualifiedName": "'Filter Page'.Fill",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "Fill",
-                "module": "Filter Page -2",
-                "type": "'Filter Page -2'"
+                "module": "Filter Page",
+                "type": "'Filter Page'"
               }
             }
           ],
@@ -4139,19 +4099,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Filter Page -2'.sample_nttlogo_4.Image"
+                  "fullyQualifiedName": "'Filter Page'.sample_nttlogo_4.Image"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Filter Page -2'.sample_nttlogo_4.Image",
+                  "fullyQualifiedName": "'Filter Page'.sample_nttlogo_4.Image",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "Image",
-                "module": "Filter Page -2",
-                "type": "'Filter Page -2'.sample_nttlogo_4"
+                "module": "Filter Page",
+                "type": "'Filter Page'.sample_nttlogo_4"
               }
             }
           ],
@@ -4169,19 +4129,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Filter Page -2'.sample_nttlogo_4.X"
+                  "fullyQualifiedName": "'Filter Page'.sample_nttlogo_4.X"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Filter Page -2'.sample_nttlogo_4.X",
+                  "fullyQualifiedName": "'Filter Page'.sample_nttlogo_4.X",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "X",
-                "module": "Filter Page -2",
-                "type": "'Filter Page -2'.sample_nttlogo_4"
+                "module": "Filter Page",
+                "type": "'Filter Page'.sample_nttlogo_4"
               }
             }
           ],
@@ -4199,19 +4159,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Filter Page -2'.sample_nttlogo_4.Width"
+                  "fullyQualifiedName": "'Filter Page'.sample_nttlogo_4.Width"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Filter Page -2'.sample_nttlogo_4.Width",
+                  "fullyQualifiedName": "'Filter Page'.sample_nttlogo_4.Width",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "Width",
-                "module": "Filter Page -2",
-                "type": "'Filter Page -2'.sample_nttlogo_4"
+                "module": "Filter Page",
+                "type": "'Filter Page'.sample_nttlogo_4"
               }
             }
           ],
@@ -4229,19 +4189,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Filter Page -2'.sample_nttlogo_4.Height"
+                  "fullyQualifiedName": "'Filter Page'.sample_nttlogo_4.Height"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Filter Page -2'.sample_nttlogo_4.Height",
+                  "fullyQualifiedName": "'Filter Page'.sample_nttlogo_4.Height",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "Height",
-                "module": "Filter Page -2",
-                "type": "'Filter Page -2'.sample_nttlogo_4"
+                "module": "Filter Page",
+                "type": "'Filter Page'.sample_nttlogo_4"
               }
             }
           ],
@@ -4259,19 +4219,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Filter Page -2'.HtmlText1_1.HtmlText"
+                  "fullyQualifiedName": "'Filter Page'.HtmlText1_1.HtmlText"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Filter Page -2'.HtmlText1_1.HtmlText",
+                  "fullyQualifiedName": "'Filter Page'.HtmlText1_1.HtmlText",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "HtmlText",
-                "module": "Filter Page -2",
-                "type": "'Filter Page -2'.HtmlText1_1"
+                "module": "Filter Page",
+                "type": "'Filter Page'.HtmlText1_1"
               }
             }
           ],

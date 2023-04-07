@@ -120,9 +120,9 @@
     "UserLocale": "en-US"
   },
   "ScreenOrder": [
-    "Welcome Page -2",
-    "Filter Page -2",
-    "Checklist-2",
+    "Welcome Page",
+    "Filter Page",
+    "Checklist",
     "CreateChecklist",
     "EditQuestions",
     "Theme",
