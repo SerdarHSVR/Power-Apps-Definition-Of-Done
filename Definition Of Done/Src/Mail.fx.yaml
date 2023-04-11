@@ -44,20 +44,20 @@ Mail As screen:
                 )
             )
         Width: =40
-        X: =1313
-        Y: =315
+        X: =1315
+        Y: =336
         ZIndex: =2
 
     "'e-mail' As text":
         Default: =""
-        X: =1033
-        Y: =108
+        X: =1035
+        Y: =129
         ZIndex: =3
 
     subject As text:
         Default: ="Definition of Done Answers"
-        X: =1033
-        Y: =170
+        X: =1035
+        Y: =191
         ZIndex: =4
 
     body As text:
@@ -65,32 +65,32 @@ Mail As screen:
             ="Report Name: " & reportName_2.Text
         Height: =70
         Mode: =TextMode.MultiLine
-        X: =1033
-        Y: =227
+        X: =1035
+        Y: =248
         ZIndex: =5
 
     Label2 As label:
         Text: |-
             ="E-Mail Address:"
         Width: =134
-        X: =899
-        Y: =108
+        X: =901
+        Y: =129
         ZIndex: =6
 
     Label6 As label:
         Text: |-
             ="Subject:"
         Width: =78
-        X: =955
-        Y: =170
+        X: =957
+        Y: =191
         ZIndex: =7
 
     Label8 As label:
         Text: |-
             ="Body:"
         Width: =56
-        X: =977
-        Y: =227
+        X: =979
+        Y: =248
         ZIndex: =8
 
     sample_nttlogo_1 As image:
