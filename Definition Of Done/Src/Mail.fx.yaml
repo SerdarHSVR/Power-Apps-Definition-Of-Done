@@ -14,29 +14,35 @@ Mail As screen:
     Icon6 As icon.Send:
         Height: =40
         Icon: =Icon.Send
-        OnSelect: |+
-            =Notify(
-                "Sending PDF File...",
-                NotificationType.Information
-            );
-            Office365Outlook.SendEmailV2(
-                'e-mail'.Text,
-                subject.Text,
-                body.Text,
-                {
-                    Attachments: Table(
-                        {
-                            Name: "Answers.pdf",
-                            ContentBytes: ViewPDF
-                        }
-                    )
-                }
-            );
-            Notify(
-                "E-Mail Sent",
-                NotificationType.Information
+        OnSelect: |-
+            =If(
+                IsBlank('e-mail'.Text),
+                Notify(
+                    "Please Enter a E-Mail Address!",
+                    NotificationType.Error
+                ),
+                Notify(
+                    "Sending PDF File...",
+                    NotificationType.Information
+                );
+                Office365Outlook.SendEmailV2(
+                    'e-mail'.Text,
+                    subject.Text,
+                    body.Text,
+                    {
+                        Attachments: Table(
+                            {
+                                Name: "Answers.pdf",
+                                ContentBytes: ViewPDF
+                            }
+                        )
+                    }
+                );
+                Notify(
+                    "E-Mail Sent",
+                    NotificationType.Success
+                )
             )
-            
         Width: =40
         X: =1313
         Y: =315
@@ -49,13 +55,14 @@ Mail As screen:
         ZIndex: =3
 
     subject As text:
-        Default: =""
+        Default: ="Definition of Done Answers"
         X: =1033
         Y: =170
         ZIndex: =4
 
     body As text:
-        Default: =""
+        Default: |-
+            ="Report Name: " & reportName_2.Text
         Height: =70
         Mode: =TextMode.MultiLine
         X: =1033
