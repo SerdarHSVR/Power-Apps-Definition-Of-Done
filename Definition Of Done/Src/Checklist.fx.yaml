@@ -342,7 +342,7 @@ Checklist As screen:
             Launch(downloadPDF);
             Notify(
                 "PDF File Created",
-                NotificationType.Information
+                NotificationType.Success
             );
         Width: =30
         X: =1219
