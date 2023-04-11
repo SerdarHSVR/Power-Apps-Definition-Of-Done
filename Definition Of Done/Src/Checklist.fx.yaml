@@ -318,9 +318,9 @@ Checklist As screen:
         Icon: =Icon.DocumentPDF
         OnSelect: |-
             =Notify(
-                    "Generating PDF File...",
-                    NotificationType.Information
-                );
+                "Generating PDF File...",
+                NotificationType.Information
+            );
             Set(
                 downloadPDF,
                 generatePDF.Run(
@@ -339,7 +339,11 @@ Checklist As screen:
                     }
                 ).pdfurl
             );
-            Launch(downloadPDF)
+            Launch(downloadPDF);
+            Notify(
+                "PDF File Created",
+                NotificationType.Information
+            );
         Width: =30
         X: =1219
         Y: =90
@@ -385,4 +389,41 @@ Checklist As screen:
             X: =965
             Y: =29
             ZIndex: =27
+
+    Icon4 As icon.Mail:
+        Height: =30
+        Icon: =Icon.Mail
+        OnSelect: |-
+            =Notify(
+                "Sending PDF File...",
+                NotificationType.Information
+            );
+            Office365Outlook.SendEmailV2(
+                User().Email,
+                "Definition of Done Answers",
+                "PDF From Power Apps",
+                {
+                    Attachments: Table(
+                        {
+                            Name: "Answers.pdf",
+                            ContentBytes: PDF(
+                                questionGallery_3,
+                                {
+                                    Orientation: PaperOrientation.Landscape,
+                                    Size: PaperSize.A4,
+                                    ExpandContainers: true
+                                }
+                            )
+                        }
+                    )
+                }
+            );
+            Notify(
+                "E-Mail Sent",
+                NotificationType.Information
+            );
+        Width: =30
+        X: =1186
+        Y: =90
+        ZIndex: =31
 
