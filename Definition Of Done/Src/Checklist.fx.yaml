@@ -316,22 +316,30 @@ Checklist As screen:
     Icon1 As icon.DocumentPDF:
         Height: =30
         Icon: =Icon.DocumentPDF
-        OnSelect: |
-            =generatePDF.Run(
-                {
-                    file: {
-                        name: "Answers",
-                        contentBytes: PDF(
-                            questionGallery_3,
-                            {
-                                Orientation: PaperOrientation.Landscape,
-                                Size: PaperSize.A4,
-                                ExpandContainers: true
-                            }
-                        )
+        OnSelect: |-
+            =Notify(
+                    "Generating PDF File...",
+                    NotificationType.Information
+                );
+            Set(
+                downloadPDF,
+                generatePDF.Run(
+                    {
+                        file: {
+                            name: "Answers",
+                            contentBytes: PDF(
+                                questionGallery_3,
+                                {
+                                    Orientation: PaperOrientation.Landscape,
+                                    Size: PaperSize.A4,
+                                    ExpandContainers: true
+                                }
+                            )
+                        }
                     }
-                }
-            )
+                ).pdfurl
+            );
+            Launch(downloadPDF)
         Width: =30
         X: =1219
         Y: =90
