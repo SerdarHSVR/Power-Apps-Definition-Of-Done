@@ -5,10 +5,10 @@ Mail As screen:
         BorderColor: =RGBA(0, 0, 0, 1)
         Document: =ViewPDF
         Fill: =RGBA(0, 0, 0, 0.5)
-        Height: =638
+        Height: =616
         Width: =656
         X: =18
-        Y: =108
+        Y: =129
         ZIndex: =1
 
     Icon6 As icon.Send:
@@ -161,4 +161,13 @@ Mail As screen:
         X: =1320
         Y: =15
         ZIndex: =15
+
+    Label9 As label:
+        FontWeight: =FontWeight.Bold
+        Size: =20
+        Text: ="PDF Preview"
+        Width: =220
+        X: =18
+        Y: =89
+        ZIndex: =16
 
