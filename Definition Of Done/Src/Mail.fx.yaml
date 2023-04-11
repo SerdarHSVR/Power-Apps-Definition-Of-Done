@@ -5,93 +5,11 @@ Mail As screen:
         BorderColor: =RGBA(0, 0, 0, 1)
         Document: =ViewPDF
         Fill: =RGBA(0, 0, 0, 0.5)
-        Height: =616
-        Width: =656
+        Height: =636
+        Width: =483
         X: =18
-        Y: =129
+        Y: =109
         ZIndex: =1
-
-    Icon6 As icon.Send:
-        Height: =40
-        Icon: =Icon.Send
-        OnSelect: |-
-            =If(
-                IsBlank('e-mail'.Text),
-                Notify(
-                    "Please Enter a E-Mail Address!",
-                    NotificationType.Error
-                ),
-                Notify(
-                    "Sending PDF File...",
-                    NotificationType.Information
-                );
-                Office365Outlook.SendEmailV2(
-                    'e-mail'.Text,
-                    subject.Text,
-                    body.Text,
-                    {
-                        Attachments: Table(
-                            {
-                                Name: "Answers.pdf",
-                                ContentBytes: ViewPDF
-                            }
-                        )
-                    }
-                );
-                Notify(
-                    "E-Mail Sent",
-                    NotificationType.Success
-                )
-            )
-        Width: =40
-        X: =1315
-        Y: =336
-        ZIndex: =2
-
-    "'e-mail' As text":
-        Default: =""
-        X: =1035
-        Y: =129
-        ZIndex: =3
-
-    subject As text:
-        Default: ="Definition of Done Answers"
-        X: =1035
-        Y: =191
-        ZIndex: =4
-
-    body As text:
-        Default: |-
-            ="Report Name: " & reportName_2.Text
-        Height: =70
-        Mode: =TextMode.MultiLine
-        X: =1035
-        Y: =248
-        ZIndex: =5
-
-    Label2 As label:
-        Text: |-
-            ="E-Mail Address:"
-        Width: =134
-        X: =901
-        Y: =129
-        ZIndex: =6
-
-    Label6 As label:
-        Text: |-
-            ="Subject:"
-        Width: =78
-        X: =957
-        Y: =191
-        ZIndex: =7
-
-    Label8 As label:
-        Text: |-
-            ="Body:"
-        Width: =56
-        X: =979
-        Y: =248
-        ZIndex: =8
 
     sample_nttlogo_1 As image:
         Height: =73
@@ -169,7 +87,7 @@ Mail As screen:
         Text: ="PDF Preview"
         Width: =220
         X: =18
-        Y: =89
+        Y: =69
         ZIndex: =16
 
     Icon5 As icon.BackArrow:
@@ -180,4 +98,101 @@ Mail As screen:
         X: =1285
         Y: =20
         ZIndex: =17
+
+    Group2 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =18
+
+        Icon6 As icon.Send:
+            Height: =55
+            Icon: =Icon.Send
+            OnSelect: |-
+                =If(
+                    IsBlank('e-mail'.Text),
+                    Notify(
+                        "Please Enter a E-Mail Address!",
+                        NotificationType.Error
+                    ),
+                    Notify(
+                        "Sending PDF File...",
+                        NotificationType.Information
+                    );
+                    Office365Outlook.SendEmailV2(
+                        'e-mail'.Text,
+                        subject.Text,
+                        body.Text,
+                        {
+                            Attachments: Table(
+                                {
+                                    Name: "Answers.pdf",
+                                    ContentBytes: ViewPDF
+                                }
+                            )
+                        }
+                    );
+                    Notify(
+                        "E-Mail Sent",
+                        NotificationType.Success
+                    )
+                )
+            Width: =50
+            X: =1306
+            Y: =413
+            ZIndex: =2
+
+        "'e-mail' As text":
+            Default: =""
+            Height: =55
+            Width: =398
+            X: =958
+            Y: =129
+            ZIndex: =3
+
+        subject As text:
+            Default: ="Definition of Done Answers"
+            Height: =55
+            Width: =398
+            X: =958
+            Y: =214
+            ZIndex: =4
+
+        body As text:
+            Default: |-
+                ="Report Name: " & reportName_2.Text
+            Height: =96
+            Mode: =TextMode.MultiLine
+            Width: =398
+            X: =958
+            Y: =292
+            ZIndex: =5
+
+        Label2 As label:
+            Height: =55
+            Text: |-
+                ="E-Mail Address:"
+            Width: =166
+            X: =792
+            Y: =129
+            ZIndex: =6
+
+        Label6 As label:
+            Height: =55
+            Text: |-
+                ="Subject:"
+            Width: =97
+            X: =862
+            Y: =214
+            ZIndex: =7
+
+        Label8 As label:
+            Height: =55
+            Text: |-
+                ="Body:"
+            Width: =70
+            X: =889
+            Y: =292
+            ZIndex: =8
 
