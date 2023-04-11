@@ -1,0 +1,157 @@
+Mail As screen:
+    Fill: =Theme.Fill
+
+    PdfViewer3 As pdfViewer:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        Document: =ViewPDF
+        Fill: =RGBA(0, 0, 0, 0.5)
+        Height: =638
+        Width: =656
+        X: =18
+        Y: =108
+        ZIndex: =1
+
+    Icon6 As icon.Send:
+        Height: =40
+        Icon: =Icon.Send
+        OnSelect: |+
+            =Notify(
+                "Sending PDF File...",
+                NotificationType.Information
+            );
+            Office365Outlook.SendEmailV2(
+                'e-mail'.Text,
+                subject.Text,
+                body.Text,
+                {
+                    Attachments: Table(
+                        {
+                            Name: "Answers.pdf",
+                            ContentBytes: ViewPDF
+                        }
+                    )
+                }
+            );
+            Notify(
+                "E-Mail Sent",
+                NotificationType.Information
+            )
+            
+        Width: =40
+        X: =1313
+        Y: =315
+        ZIndex: =2
+
+    "'e-mail' As text":
+        Default: =""
+        X: =1033
+        Y: =108
+        ZIndex: =3
+
+    subject As text:
+        Default: =""
+        X: =1033
+        Y: =170
+        ZIndex: =4
+
+    body As text:
+        Default: =""
+        Height: =70
+        Mode: =TextMode.MultiLine
+        X: =1033
+        Y: =227
+        ZIndex: =5
+
+    Label2 As label:
+        Text: |-
+            ="E-Mail Address:"
+        Width: =134
+        X: =899
+        Y: =108
+        ZIndex: =6
+
+    Label6 As label:
+        Text: |-
+            ="Subject:"
+        Width: =78
+        X: =955
+        Y: =170
+        ZIndex: =7
+
+    Label8 As label:
+        Text: |-
+            ="Body:"
+        Width: =56
+        X: =977
+        Y: =227
+        ZIndex: =8
+
+    sample_nttlogo_1 As image:
+        Height: =73
+        Image: ='NTT Logo'
+        Width: =190
+        Y: =4
+        ZIndex: =9
+
+    Rectangle1_1 As rectangle:
+        BorderColor: =RGBA(103, 133, 193, 1)
+        Fill: =RGBA(103, 133, 193, 1)
+        Height: =48
+        Width: =3
+        X: =190
+        Y: =15
+        ZIndex: =10
+
+    Label1_2 As label:
+        FontWeight: =FontWeight.Semibold
+        Height: =44
+        Size: =16
+        Text: ="Sending Mail"
+        Width: =413
+        X: =206
+        Y: =15
+        ZIndex: =11
+
+    "'name-surname_3' As label":
+        Align: =Align.Right
+        FontWeight: =FontWeight.Semibold
+        Height: =27
+        Size: =14
+        Text: =User().FullName
+        Width: =156
+        X: =1096
+        Y: =9
+        ZIndex: =12
+
+    profilImage_3 As image:
+        Height: =45
+        Image: =User().Image
+        RadiusBottomLeft: =70
+        RadiusBottomRight: =70
+        RadiusTopLeft: =70
+        RadiusTopRight: =70
+        Width: =45
+        X: =1261
+        Y: =9
+        ZIndex: =13
+
+    Label8_6 As label:
+        Align: =Align.Right
+        Color: =RGBA(149, 149, 149, 1)
+        Height: =27
+        Size: =12
+        Text: =User().Email
+        Width: =251
+        X: =1001
+        Y: =36
+        ZIndex: =14
+
+    Icon2_4 As icon.Home:
+        Color: =RGBA(0, 0, 0, 1)
+        Height: =35
+        Icon: =Icon.Home
+        Width: =35
+        X: =1320
+        Y: =15
+        ZIndex: =15
+

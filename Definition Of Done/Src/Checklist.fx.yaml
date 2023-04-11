@@ -395,33 +395,21 @@ Checklist As screen:
         Icon: =Icon.Mail
         OnSelect: |-
             =Notify(
-                "Sending PDF File...",
+                "Generating PDF...",
                 NotificationType.Information
             );
-            Office365Outlook.SendEmailV2(
-                User().Email,
-                "Definition of Done Answers",
-                "PDF From Power Apps",
-                {
-                    Attachments: Table(
-                        {
-                            Name: "Answers.pdf",
-                            ContentBytes: PDF(
-                                questionGallery_3,
-                                {
-                                    Orientation: PaperOrientation.Landscape,
-                                    Size: PaperSize.A4,
-                                    ExpandContainers: true
-                                }
-                            )
-                        }
-                    )
-                }
+            Set(
+                ViewPDF,
+                PDF(
+                    questionGallery_3,
+                    {
+                        Orientation: PaperOrientation.Landscape,
+                        Size: PaperSize.A4,
+                        ExpandContainers: true
+                    }
+                )
             );
-            Notify(
-                "E-Mail Sent",
-                NotificationType.Information
-            );
+            Navigate(Mail)
         Width: =30
         X: =1186
         Y: =90
