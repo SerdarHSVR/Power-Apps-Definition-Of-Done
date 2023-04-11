@@ -194,8 +194,16 @@
         Height: =38
         HoverBorderColor: =
         OnCheck: |-
-            =ForAll(Distinct(cl_checklist,AnaBa_x015f_l_x0131_k),
-            Collect(Cl_majorcategory,{MajorCategory:Value}))
+            =ForAll(
+                Distinct(
+                    cl_checklist,
+                    AnaBa_x015f_l_x0131_k
+                ),
+                Collect(
+                    Cl_majorcategory,
+                    {MajorCategory: Value}
+                )
+            )
         OnUncheck: =Clear(Cl_majorcategory)
         PressedBorderColor: =
         Size: =11

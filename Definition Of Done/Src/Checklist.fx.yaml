@@ -313,6 +313,30 @@ Checklist As screen:
         Y: =10
         ZIndex: =29
 
+    Icon1 As icon.DocumentPDF:
+        Height: =30
+        Icon: =Icon.DocumentPDF
+        OnSelect: |
+            =generatePDF.Run(
+                {
+                    file: {
+                        name: "Answers",
+                        contentBytes: PDF(
+                            questionGallery_3,
+                            {
+                                Orientation: PaperOrientation.Landscape,
+                                Size: PaperSize.A4,
+                                ExpandContainers: true
+                            }
+                        )
+                    }
+                }
+            )
+        Width: =30
+        X: =1219
+        Y: =90
+        ZIndex: =30
+
     Group1_1 As group:
         Height: =5
         Width: =5

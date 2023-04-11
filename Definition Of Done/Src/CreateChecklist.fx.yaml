@@ -12,7 +12,7 @@ CreateChecklist As screen:
             )
         Height: =50
         Icon: =Icon.Save
-        OnSelect: |
+        OnSelect: |-
             =Patch(
                 'Definition of Done',
                 Defaults('Definition of Done'),
@@ -23,8 +23,8 @@ CreateChecklist As screen:
                     'Alt Başlık': altBaslıkCreate_1.Selected.Value,
                     Soru: soruTxt_1.Text,
                     Statu: "Draft",
-                    'Neden Yapılmalı':DataCardValue5.Text,
-                    'Microsoft Link':DataCardValue7.Text
+                    'Neden Yapılmalı': DataCardValue5.Text,
+                    'Microsoft Link': DataCardValue7.Text
                 }
             )
         Tooltip: ="Save"
