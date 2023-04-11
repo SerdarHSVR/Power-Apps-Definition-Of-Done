@@ -4,7 +4,12 @@ CreateChecklist As screen:
 
     saveBTN As icon.Save:
         DisabledColor: =RGBA(166, 166, 166, 1)
-        DisplayMode: =If(showButton4=true && showButton5= true && showButton6=true && showButton7 = true && showButton8 = true, DisplayMode.Edit,DisplayMode.Disabled)
+        DisplayMode: |-
+            =If(
+                showButton4 = true && showButton5 = true && showButton6 = true && showButton7 = true && showButton8 = true,
+                DisplayMode.Edit,
+                DisplayMode.Disabled
+            )
         Height: =50
         Icon: =Icon.Save
         OnSelect: |

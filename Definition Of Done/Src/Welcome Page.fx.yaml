@@ -85,14 +85,39 @@
         ZIndex: =7
 
     Arrow1_1 As arrow:
+        DisplayMode: =
         Fill: =RGBA(255, 255, 255, 1)
         OnSelect: |-
             =Navigate(
-                'Filter Page',
-                ScreenTransition.None
+                If(
+                    IsBlank(reportName_2.Text),
+                    'Welcome Page',
+                    'Filter Page'
+                )
             );
-            
-            Collect(cl_checklist, ShowColumns(Filter('Definition of Done',Title=platformSelect_1.SelectedText.Value),"Link2","AnaBa_x015f_l_x0131_k","AltBa_x015f_l_x0131_k","NedenYap_x0131_lmal_x0131_","NeKadarGerekli","Soru","Statu"))
+            Collect(
+                cl_checklist,
+                ShowColumns(
+                    Filter(
+                        'Definition of Done',
+                        Title = platformSelect_1.SelectedText.Value
+                    ),
+                    "Link2",
+                    "AnaBa_x015f_l_x0131_k",
+                    "AltBa_x015f_l_x0131_k",
+                    "NedenYap_x0131_lmal_x0131_",
+                    "NeKadarGerekli",
+                    "Soru",
+                    "Statu"
+                )
+            );
+            If(
+                IsBlank(reportName_2.Text),
+                Notify(
+                    "Please Enter a Report Name",
+                    NotificationType.Error
+                )
+            )
         X: =1285
         Y: =595
         ZIndex: =8
