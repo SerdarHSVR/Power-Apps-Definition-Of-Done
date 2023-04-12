@@ -835,9 +835,9 @@ CreateChecklist As screen:
             OnSelect: =Launch(ThisItem.'Microsoft Link')
             Tooltip: ="Detay bilgi için tıkla"
             Visible: =If(IsBlank(ThisItem.'Microsoft Link'),false,true)
-            Width: =31
-            X: =1258
-            Y: =16
+            Width: =30
+            X: =1224
+            Y: =15
             ZIndex: =9
 
         nedenYapılmalı_4 As label:
@@ -886,8 +886,8 @@ CreateChecklist As screen:
             Size: =11
             Visible: =If(IsBlank(queston_5),false,true)
             Width: =156
-            X: =1084
-            Y: =11
+            X: =1068
+            Y: =12
             ZIndex: =16
 
         HtmlText2_4 As htmlViewer:
@@ -943,7 +943,7 @@ CreateChecklist As screen:
                 )
             Visible: =If(IsBlank(queston_5),false,true)
             Width: =30
-            X: =1258
-            Y: =13
+            X: =1265
+            Y: =15
             ZIndex: =18
 
