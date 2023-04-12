@@ -754,7 +754,10 @@ EditQuestions As screen:
     Button2 As button:
         Height: =30
         OnSelect: |-
-            =Remove('Definition of Done',questions.Selected);
+            =Remove(
+                'Definition of Done',
+                questions.Selected
+            );
             Notify(
                 "Question Deleted",
                 NotificationType.Information
