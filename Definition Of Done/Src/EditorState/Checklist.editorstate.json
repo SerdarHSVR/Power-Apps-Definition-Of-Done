@@ -1390,7 +1390,7 @@
       "StyleName": "defaultButtonStyle",
       "Type": "ControlInfo"
     },
-    "Group1_1": {
+    "Group3": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "X",
@@ -1408,7 +1408,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "Group1_1",
+      "Name": "Group3",
       "ParentIndex": 18,
       "PersistMetaDataIDKey": false,
       "Properties": [

@@ -105,10 +105,10 @@
     "goToSurveyPageBT_3": 70,
     "goToSurveyPageBT_4": 268,
     "Group1": 139,
-    "Group1_1": 71,
     "Group1_2": 269,
     "Group2": 21,
     "Group2_1": 236,
+    "Group3": 273,
     "help_2": 125,
     "help_3": 66,
     "help_4": 153,
@@ -276,7 +276,7 @@
   "DoesTestStepsMetadataExist": false,
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "04/12/2023 12:55:34",
+  "HeaderLastSavedDateTimeUTC": "04/12/2023 12:56:42",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "64deca6a-4772-4faa-a1c6-4b250835310e": "\"/providers/microsoft.powerapps/apis/shared_logicflows/connections/11d89a2a89ae4c239ec856326bf5c8f7-bb97685a40392ad9\"",
@@ -317,11 +317,6 @@
       "name-surname_5": 0,
       "profilImage_5": 1
     },
-    "Group1_1": {
-      "Label8_4": 2,
-      "name-surname_6": 0,
-      "profilImage_6": 1
-    },
     "Group1_2": {
       "Label8_7": 2,
       "name-surname_8": 0,
@@ -341,6 +336,13 @@
       "homeBT_1": 3,
       "name-surname_7": 0,
       "profilImage_8": 1
+    },
+    "Group3": {
+      "ChecklistPage_1": 4,
+      "Icon2_2": 3,
+      "Label8_4": 2,
+      "name-surname_6": 0,
+      "profilImage_6": 1
     }
   },
   "OrderPcfTemplate": {},
@@ -466,10 +468,10 @@
     "goToSurveyPageBT_3": {},
     "goToSurveyPageBT_4": {},
     "Group1": {},
-    "Group1_1": {},
     "Group1_2": {},
     "Group2": {},
     "Group2_1": {},
+    "Group3": {},
     "help_2": {},
     "help_3": {},
     "help_4": {},
@@ -740,10 +742,10 @@
     "goToSurveyPageBT_3": 66,
     "goToSurveyPageBT_4": 96,
     "Group1": 98,
-    "Group1_1": 41,
     "Group1_2": 70,
     "Group2": 231,
     "Group2_1": 12,
+    "Group3": 0,
     "help_2": 150,
     "help_3": 62,
     "help_4": 176,
