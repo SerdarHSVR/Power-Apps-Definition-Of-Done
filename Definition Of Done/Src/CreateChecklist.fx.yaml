@@ -884,6 +884,7 @@ CreateChecklist As screen:
             PaddingTop: =5
             RadioSize: =25
             Size: =11
+            Visible: =If(IsBlank(queston_5),false,true)
             Width: =156
             X: =1084
             Y: =11
@@ -923,6 +924,7 @@ CreateChecklist As screen:
                   </table>
                 </html>"
             OnSelect: =Select(Parent)
+            Visible: =If(IsBlank(queston_5),false,true)
             Width: =260
             Y: =12
             ZIndex: =17
@@ -931,10 +933,15 @@ CreateChecklist As screen:
             Height: =30
             Icon: =Icon.Edit
             OnSelect: |-
-                =Set(varSelected, ThisItem); Navigate(EditQuestions,ScreenTransition.Fade)
-                
-                
-                //Set(SelectedRecord,questionGallery_4.Selected);Navigate(EditQuestions,ScreenTransition.Fade)
+                =Set(
+                    varSelected,
+                    ThisItem
+                );
+                Navigate(
+                    EditQuestions,
+                    ScreenTransition.Fade
+                )
+            Visible: =If(IsBlank(queston_5),false,true)
             Width: =30
             X: =1258
             Y: =13
