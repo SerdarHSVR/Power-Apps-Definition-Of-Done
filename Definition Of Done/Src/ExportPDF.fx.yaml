@@ -104,7 +104,7 @@ ExportPDF As screen:
         Icon: =Icon.Download
         OnSelect: |-
             =Notify(
-                "Generating PDF File...",
+                "PDF File Downloading...",
                 NotificationType.Information
             );
             Set(
@@ -120,9 +120,9 @@ ExportPDF As screen:
             );
             Launch(downloadPDF);
             Notify(
-                "PDF File Created",
+                "PDF File Downloaded",
                 NotificationType.Success
-            );
+            )
         Width: =40
         X: =441
         Y: =722
