@@ -717,6 +717,7 @@ CreateChecklist As screen:
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
+                Reset: =reset
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
