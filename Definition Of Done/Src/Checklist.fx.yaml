@@ -264,35 +264,6 @@ Checklist As screen:
         Y: =93
         ZIndex: =23
 
-    downloadBT_1 As icon.Download:
-        Height: =30
-        Icon: =Icon.Download
-        OnSelect: |-
-            =Set(
-                MyAnswers,
-                questionGallery_3.AllItems
-            );
-            Concurrent(
-                Notify(
-                    "Generating CSV File...",
-                    NotificationType.Information
-                ),
-                Set(
-                    csvFileUrl,
-                    DefinitionOfDoneCSV.Run(
-                        JSON(
-                            MyAnswers,
-                            JSONFormat.IgnoreBinaryData & JSONFormat.IgnoreUnsupportedTypes
-                        )
-                    ).fileurl
-                )
-            );
-            Launch(csvFileUrl)
-        Width: =30
-        X: =1249
-        Y: =90
-        ZIndex: =24
-
     Icon2_2 As icon.Home:
         Color: =RGBA(0, 0, 0, 1)
         Height: =40
@@ -345,7 +316,7 @@ Checklist As screen:
                 NotificationType.Success
             );
         Width: =30
-        X: =1219
+        X: =1256
         Y: =90
         ZIndex: =30
 
@@ -411,7 +382,7 @@ Checklist As screen:
             );
             Navigate(Mail)
         Width: =30
-        X: =1186
+        X: =1221
         Y: =90
         ZIndex: =31
 
