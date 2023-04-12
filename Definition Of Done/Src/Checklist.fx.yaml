@@ -330,7 +330,7 @@ Checklist As screen:
                             contentBytes: PDF(
                                 questionGallery_3,
                                 {
-                                    Orientation: PaperOrientation.Landscape,
+                                    Orientation: PaperOrientation.Portrait,
                                     Size: PaperSize.A4,
                                     ExpandContainers: true
                                 }
