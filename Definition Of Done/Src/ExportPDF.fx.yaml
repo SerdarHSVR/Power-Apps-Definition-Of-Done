@@ -1,12 +1,12 @@
-Mail As screen:
+ExportPDF As screen:
     Fill: =Theme.Fill
 
     PdfViewer3 As pdfViewer:
         BorderColor: =RGBA(0, 0, 0, 1)
         Document: =ViewPDF
         Fill: =RGBA(0, 0, 0, 0.5)
-        Height: =636
-        Width: =483
+        Height: =602
+        Width: =463
         X: =18
         Y: =109
         ZIndex: =1
@@ -99,6 +99,35 @@ Mail As screen:
         Y: =20
         ZIndex: =17
 
+    Icon7 As icon.Download:
+        Height: =40
+        Icon: =Icon.Download
+        OnSelect: |-
+            =Notify(
+                "Generating PDF File...",
+                NotificationType.Information
+            );
+            Set(
+                downloadPDF,
+                generatePDF.Run(
+                    {
+                        file: {
+                            name: "Answers",
+                            contentBytes: ViewPDF
+                        }
+                    }
+                ).pdfurl
+            );
+            Launch(downloadPDF);
+            Notify(
+                "PDF File Created",
+                NotificationType.Success
+            );
+        Width: =40
+        X: =441
+        Y: =722
+        ZIndex: =18
+
     Group2 As group:
         Height: =5
         Width: =5
@@ -107,7 +136,7 @@ Mail As screen:
         ZIndex: =18
 
         Icon6 As icon.Send:
-            Height: =55
+            Height: =50
             Icon: =Icon.Send
             OnSelect: |-
                 =If(
@@ -195,4 +224,23 @@ Mail As screen:
             X: =889
             Y: =292
             ZIndex: =8
+
+    Label10 As label:
+        Align: =Align.Right
+        FontWeight: =FontWeight.Semibold
+        Height: =38
+        Size: =18
+        Text: ="Send E-Mail"
+        Width: =148
+        X: =1158
+        Y: =419
+        ZIndex: =19
+
+    Label11 As label:
+        Align: =Align.Right
+        FontWeight: =FontWeight.Semibold
+        Text: ="Download PDF"
+        X: =291
+        Y: =722
+        ZIndex: =20
 

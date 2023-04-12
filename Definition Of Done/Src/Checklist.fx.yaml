@@ -284,42 +284,6 @@ Checklist As screen:
         Y: =10
         ZIndex: =29
 
-    Icon1 As icon.DocumentPDF:
-        Height: =30
-        Icon: =Icon.DocumentPDF
-        OnSelect: |-
-            =Notify(
-                "Generating PDF File...",
-                NotificationType.Information
-            );
-            Set(
-                downloadPDF,
-                generatePDF.Run(
-                    {
-                        file: {
-                            name: "Answers",
-                            contentBytes: PDF(
-                                questionGallery_3,
-                                {
-                                    Orientation: PaperOrientation.Portrait,
-                                    Size: PaperSize.A4,
-                                    ExpandContainers: true
-                                }
-                            )
-                        }
-                    }
-                ).pdfurl
-            );
-            Launch(downloadPDF);
-            Notify(
-                "PDF File Created",
-                NotificationType.Success
-            );
-        Width: =30
-        X: =1256
-        Y: =90
-        ZIndex: =30
-
     Group1_1 As group:
         Height: =5
         Width: =5
@@ -363,7 +327,7 @@ Checklist As screen:
 
     Icon4 As icon.Mail:
         Height: =30
-        Icon: =Icon.Mail
+        Icon: =Icon.Export
         OnSelect: |-
             =Notify(
                 "Generating PDF...",
@@ -380,9 +344,9 @@ Checklist As screen:
                     }
                 )
             );
-            Navigate(Mail)
+            Navigate(ExportPDF)
         Width: =30
-        X: =1221
-        Y: =90
+        X: =1251
+        Y: =88
         ZIndex: =31
 

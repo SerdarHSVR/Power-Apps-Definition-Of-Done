@@ -387,7 +387,7 @@ Checklist_1 As screen:
                     }
                 )
             );
-            Navigate(Mail)
+            Navigate(ExportPDF)
         Width: =30
         X: =1221
         Y: =90

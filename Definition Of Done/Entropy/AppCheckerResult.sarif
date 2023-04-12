@@ -1040,19 +1040,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Mail.Icon2_4.AccessibleLabel"
+                  "fullyQualifiedName": "ExportPDF.Icon2_4.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Mail.Icon2_4.AccessibleLabel",
+                  "fullyQualifiedName": "ExportPDF.Icon2_4.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Mail",
-                "type": "Mail.Icon2_4"
+                "module": "ExportPDF",
+                "type": "ExportPDF.Icon2_4"
               }
             }
           ],
@@ -1070,19 +1070,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Mail.Icon2_4.TabIndex"
+                  "fullyQualifiedName": "ExportPDF.Icon2_4.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Mail.Icon2_4.TabIndex",
+                  "fullyQualifiedName": "ExportPDF.Icon2_4.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Mail",
-                "type": "Mail.Icon2_4"
+                "module": "ExportPDF",
+                "type": "ExportPDF.Icon2_4"
               }
             }
           ],
@@ -1100,19 +1100,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Mail.Icon5.AccessibleLabel"
+                  "fullyQualifiedName": "ExportPDF.Icon5.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Mail.Icon5.AccessibleLabel",
+                  "fullyQualifiedName": "ExportPDF.Icon5.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Mail",
-                "type": "Mail.Icon5"
+                "module": "ExportPDF",
+                "type": "ExportPDF.Icon5"
               }
             }
           ],
@@ -1130,19 +1130,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Mail.Icon5.TabIndex"
+                  "fullyQualifiedName": "ExportPDF.Icon5.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Mail.Icon5.TabIndex",
+                  "fullyQualifiedName": "ExportPDF.Icon5.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Mail",
-                "type": "Mail.Icon5"
+                "module": "ExportPDF",
+                "type": "ExportPDF.Icon5"
               }
             }
           ],
@@ -1160,19 +1160,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Mail.'e-mail'.AccessibleLabel"
+                  "fullyQualifiedName": "ExportPDF.'e-mail'.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Mail.'e-mail'.AccessibleLabel",
+                  "fullyQualifiedName": "ExportPDF.'e-mail'.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Mail",
-                "type": "Mail.'e-mail'"
+                "module": "ExportPDF",
+                "type": "ExportPDF.'e-mail'"
               }
             }
           ],
@@ -1190,19 +1190,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Mail.subject.AccessibleLabel"
+                  "fullyQualifiedName": "ExportPDF.subject.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Mail.subject.AccessibleLabel",
+                  "fullyQualifiedName": "ExportPDF.subject.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Mail",
-                "type": "Mail.subject"
+                "module": "ExportPDF",
+                "type": "ExportPDF.subject"
               }
             }
           ],
@@ -1220,19 +1220,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Mail.body.AccessibleLabel"
+                  "fullyQualifiedName": "ExportPDF.body.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Mail.body.AccessibleLabel",
+                  "fullyQualifiedName": "ExportPDF.body.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Mail",
-                "type": "Mail.body"
+                "module": "ExportPDF",
+                "type": "ExportPDF.body"
               }
             }
           ],
@@ -1250,19 +1250,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Mail.Icon6.AccessibleLabel"
+                  "fullyQualifiedName": "ExportPDF.Icon6.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Mail.Icon6.AccessibleLabel",
+                  "fullyQualifiedName": "ExportPDF.Icon6.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Mail",
-                "type": "Mail.Icon6"
+                "module": "ExportPDF",
+                "type": "ExportPDF.Icon6"
               }
             }
           ],
@@ -1280,19 +1280,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Mail.Icon6.TabIndex"
+                  "fullyQualifiedName": "ExportPDF.Icon6.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Mail.Icon6.TabIndex",
+                  "fullyQualifiedName": "ExportPDF.Icon6.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Mail",
-                "type": "Mail.Icon6"
+                "module": "ExportPDF",
+                "type": "ExportPDF.Icon6"
               }
             }
           ],
@@ -1699,49 +1699,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Checklist.Icon1.AccessibleLabel"
+                  "fullyQualifiedName": "ExportPDF.Icon7.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Checklist.Icon1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Checklist",
-                "type": "Checklist.Icon1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Checklist.Icon1.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Checklist.Icon1.TabIndex",
+                  "fullyQualifiedName": "ExportPDF.Icon7.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Checklist",
-                "type": "Checklist.Icon1"
+                "module": "ExportPDF",
+                "type": "ExportPDF.Icon7"
               }
             }
           ],
@@ -1753,6 +1723,36 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ExportPDF.Icon7.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ExportPDF.Icon7.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ExportPDF",
+                "type": "ExportPDF.Icon7"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -4369,19 +4369,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Mail.Fill"
+                  "fullyQualifiedName": "ExportPDF.Fill"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Mail.Fill",
+                  "fullyQualifiedName": "ExportPDF.Fill",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "Fill",
-                "module": "Mail",
-                "type": "Mail"
+                "module": "ExportPDF",
+                "type": "ExportPDF"
               }
             }
           ],
@@ -4399,19 +4399,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Mail.body.Default"
+                  "fullyQualifiedName": "ExportPDF.body.Default"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Mail.body.Default",
+                  "fullyQualifiedName": "ExportPDF.body.Default",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "Default",
-                "module": "Mail",
-                "type": "Mail.body"
+                "module": "ExportPDF",
+                "type": "ExportPDF.body"
               }
             }
           ],
