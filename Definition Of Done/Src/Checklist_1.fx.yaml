@@ -1,0 +1,395 @@
+Checklist_1 As screen:
+    Fill: =Theme.Fill
+
+    createQuestionPage_5 As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 0)
+        DisabledFill: =RGBA(255, 255, 255, 1)
+        DisplayMode: =DisplayMode.Disabled
+        Height: =544
+        Text: =""
+        Width: =1337
+        X: =16
+        Y: =125
+        ZIndex: =1
+
+    "questionGallery_5 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver4.0'":
+        Height: =495
+        Items: =cl_checklist_selection
+        Layout: =Layout.Vertical
+        TemplatePadding: =0
+        TemplateSize: =56
+        Width: =1307
+        X: =42
+        Y: =161
+        ZIndex: =3
+
+        queston_6 As label:
+            Height: =39
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =12
+            Text: =ThisItem.Soru
+            VerticalAlign: =VerticalAlign.Top
+            Width: =543
+            X: =291
+            Y: =16
+            ZIndex: =3
+
+        Separator2_10 As rectangle:
+            BorderColor: =RGBA(202, 202, 202, 1)
+            Fill: =RGBA(202, 202, 202, 1)
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =5
+
+        url_6 As icon.Link:
+            Color: =RGBA(10, 32, 117, 1)
+            Height: =30
+            Icon: =Icon.Link
+            OnSelect: =Launch(ThisItem.Link2)
+            Tooltip: ="Detay bilgi için tıkla"
+            Visible: =If(IsBlank(ThisItem.Link2),false,true)
+            Width: =31
+            X: =1258
+            Y: =16
+            ZIndex: =9
+
+        nedenYapılmalı_5 As label:
+            Align: =Align.Center
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =1
+            Height: =56
+            OnSelect: =Select(Parent)
+            Size: =10
+            Text: =ThisItem.NedenYap_x0131_lmal_x0131_
+            Visible: =If(help_6.Pressed, true, false)
+            Width: =273
+            X: =822
+            ZIndex: =14
+
+        help_6 As button:
+            AutoDisableOnSelect: =false
+            BorderColor: =
+            BorderThickness: =1
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledFill: =
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =25
+            HoverBorderColor: =RGBA(255, 255, 255, 1)
+            HoverColor: =
+            OnSelect: =Select(Parent)
+            PressedBorderColor: =RGBA(255, 255, 255, 1)
+            PressedColor: =
+            Size: =11
+            Text: ="?"
+            Visible: =If(IsBlank(nedenYapılmalı_5),false,true)
+            Width: =25
+            X: =248
+            Y: =15
+            ZIndex: =15
+
+        answerButton_4 As radio:
+            BorderStyle: =BorderStyle.None
+            Height: =42
+            Items: =["Yes","No"]
+            Layout: =Layout.Horizontal
+            OnChange: |-
+                =Collect(
+                    cl_answers,
+                    {
+                        AnaBaslik: ThisItem.AnaBa_x015f_l_x0131_k,
+                        AltBaslik: ThisItem.AltBa_x015f_l_x0131_k,
+                        Soru: ThisItem.Soru,
+                        Answer: Self.SelectedText,
+                        RowNumber: ThisItem.RowNumber
+                    }
+                )
+            OnSelect: |-
+                =UpdateContext({selectedQuestion: answerButton_4})
+            PaddingTop: =5
+            RadioSize: =25
+            Size: =11
+            Width: =156
+            X: =1084
+            Y: =11
+            ZIndex: =16
+
+        HtmlText2_5 As htmlViewer:
+            Height: =44
+            HtmlText: |-
+                ="<html>
+                  <table style='width:90%'>
+                    <tr>
+                      <td style='text-align:center; border-color: #e6e6e6; color:#ffffff; 
+                          background-color: " & If(
+                    ThisItem.AnaBa_x015f_l_x0131_k = "Service",
+                    "#0080B1",
+                    If(
+                        ThisItem.AnaBa_x015f_l_x0131_k = "Rapor",
+                        "#6785C1",
+                        If(
+                            ThisItem.AnaBa_x015f_l_x0131_k = "Documentation",
+                            "#0A2075",
+                            "#4B3F72"
+                        )
+                    )
+                ) & "; 
+                          border-style: solid; border-radius: 15px; border-width: 2px; font-size:x-small'>
+                          " & ThisItem.AnaBa_x015f_l_x0131_k & "
+                      </td>
+                      <td style='text-align:center; border-color: #e6e6e6; color:#ffffff; background-color: #4B3F72; border-style: solid; border-radius: 15px; border-width: 2px; font-size:x-small'>" & ThisItem.AltBa_x015f_l_x0131_k & "</td>
+                      <td style='text-align:center; border-color: #e6e6e6; color:#ffffff; border-style: solid; border-radius: 15px; border-width: 2px; font-size:x-small; 
+                      background-color: " & If(
+                    ThisItem.NeKadarGerekli = "Must",
+                    "#BC4328",
+                    "#83B254"
+                ) & "'>" & ThisItem.NeKadarGerekli & "</td>
+                    </tr>
+                  </table>
+                </html>"
+            OnSelect: =Select(Parent)
+            Width: =248
+            Y: =12
+            ZIndex: =17
+
+    nttLogo_8 As image:
+        Height: =sample_nttlogo.Height
+        Image: =sample_nttlogo.Image
+        Width: =sample_nttlogo.Width
+        X: =sample_nttlogo.X
+        Y: =sample_nttlogo.Y
+        ZIndex: =4
+
+    Rectangle1_7 As rectangle:
+        BorderColor: =RGBA(103, 133, 193, 1)
+        Fill: =RGBA(103, 133, 193, 1)
+        Height: =48
+        Width: =3
+        X: =190
+        Y: =16
+        ZIndex: =8
+
+    PageName_2 As label:
+        FontWeight: =FontWeight.Semibold
+        Height: =46
+        Size: =16
+        Text: ="Checklist"
+        Width: =246
+        X: =193
+        ZIndex: =9
+
+    powerBIreportName_5 As label:
+        Height: =26
+        Size: =12
+        Text: |-
+            ="Report Name:" & reportName_2.Text
+        Width: =223
+        X: =190
+        Y: =38
+        ZIndex: =10
+
+    Label6_2 As label:
+        Height: =28
+        Italic: =true
+        Size: =10
+        Text: ="*Eğer bahsedilen konu sizin raporunuzda yoksa Yes diye işaretleyin."
+        Width: =426
+        X: =27
+        Y: =97
+        ZIndex: =14
+
+    "answerBar_2 As gallery.'BrowseLayout_Horizontal_TwoTextOneImageVariant_ver4.0'":
+        DelayItemLoading: =true
+        Height: =16
+        Items: =cl_answers
+        LoadingSpinner: =LoadingSpinner.Data
+        ShowScrollbar: =false
+        TemplatePadding: =0
+        TemplateSize: |
+            =Self.Width / CountRows(cl_answers)
+        Width: =1322
+        X: =23
+        Y: =77
+        ZIndex: =17
+
+        Rectangle3_3 As rectangle:
+            Fill: |-
+                =If(ThisItem.RowNumber   ,Color.SeaGreen,  RGBA(200, 212, 232, 1))
+                
+                
+                
+                //If(ThisItem.RowNumber,Color.SeaGreen,  RGBA(200, 212, 232, 1))
+                //If(ThisItem.Order in cl_answers.RowNumber,Color.SeaGreen,  RGBA(200, 212, 232, 1))
+            Height: =5
+            OnSelect: =Select(Parent)
+            Width: =answerBar_2.TemplateWidth
+            Y: =2
+            ZIndex: =4
+
+    goToSurveyPageBT_4 As button:
+        DisplayMode: =If(Not(IsEmpty(Cl_majorcategory)) && Not(IsEmpty(Cl_minorcategory)) && Not(IsEmpty(Cl_prioritization)), DisplayMode.Edit,DisplayMode.Disabled)
+        Fill: =RGBA(103, 133, 193, 1)
+        Height: =52
+        OnSelect: =
+        Text: ="Complete"
+        Tooltip: ="İlerlemek için seçin"
+        Width: =168
+        X: =1181
+        Y: =692
+        ZIndex: =20
+
+    platformName_3 As label:
+        Align: =Align.Center
+        Font: =Font.Arial
+        Height: =77
+        Size: =32
+        Text: =platformSelect_1.Selected.Value
+        Width: =303
+        X: =532
+        ZIndex: =21
+
+    Icon5_2 As icon.Add:
+        Height: =30
+        Icon: =Icon.Add
+        OnSelect: =Navigate(CreateChecklist)
+        Width: =30
+        X: =1316
+        Y: =93
+        ZIndex: =22
+
+    Icon1_4 As icon.Edit:
+        Height: =30
+        Icon: =Icon.Edit
+        OnSelect: =Navigate(editQuestions)
+        Width: =30
+        X: =1286
+        Y: =93
+        ZIndex: =23
+
+    Icon2_5 As icon.Home:
+        Color: =RGBA(0, 0, 0, 1)
+        Height: =40
+        Icon: =Icon.Home
+        OnSelect: =Navigate('Welcome Page')
+        Width: =40
+        X: =1315
+        Y: =5
+        ZIndex: =28
+
+    ChecklistPage_2 As icon.Home:
+        Color: =RGBA(0, 0, 0, 1)
+        Height: =35
+        Icon: =Icon.BackArrow
+        OnSelect: =Navigate('Filter Page')
+        Width: =35
+        X: =1280
+        Y: =10
+        ZIndex: =29
+
+    Icon1_3 As icon.DocumentPDF:
+        Height: =30
+        Icon: =Icon.DocumentPDF
+        OnSelect: |-
+            =Notify(
+                "Generating PDF File...",
+                NotificationType.Information
+            );
+            Set(
+                downloadPDF,
+                generatePDF.Run(
+                    {
+                        file: {
+                            name: "Answers",
+                            contentBytes: PDF(
+                                questionGallery_5,
+                                {
+                                    Orientation: PaperOrientation.Portrait,
+                                    Size: PaperSize.A4,
+                                    ExpandContainers: true
+                                }
+                            )
+                        }
+                    }
+                ).pdfurl
+            );
+            Launch(downloadPDF);
+            Notify(
+                "PDF File Created",
+                NotificationType.Success
+            );
+        Width: =30
+        X: =1256
+        Y: =90
+        ZIndex: =30
+
+    Group1_2 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =30
+
+        "'name-surname_8' As label":
+            Align: =Align.Right
+            FontWeight: =FontWeight.Semibold
+            Height: =30
+            Size: =14
+            Text: =User().FullName
+            Width: =156
+            X: =1060
+            Y: =5
+            ZIndex: =25
+
+        profilImage_9 As image:
+            Height: =50
+            Image: =User().Image
+            RadiusBottomLeft: =70
+            RadiusBottomRight: =70
+            RadiusTopLeft: =70
+            RadiusTopRight: =70
+            Width: =50
+            X: =1225
+            Y: =5
+            ZIndex: =26
+
+        Label8_7 As label:
+            Align: =Align.Right
+            Color: =RGBA(149, 149, 149, 1)
+            Height: =30
+            Size: =12
+            Text: =User().Email
+            Width: =251
+            X: =965
+            Y: =29
+            ZIndex: =27
+
+    Icon4_1 As icon.Mail:
+        Height: =30
+        Icon: =Icon.Mail
+        OnSelect: |-
+            =Notify(
+                "Generating PDF...",
+                NotificationType.Information
+            );
+            Set(
+                ViewPDF,
+                PDF(
+                    questionGallery_5,
+                    {
+                        Orientation: PaperOrientation.Portrait,
+                        Size: PaperSize.A4,
+                        ExpandContainers: true
+                    }
+                )
+            );
+            Navigate(Mail)
+        Width: =30
+        X: =1221
+        Y: =90
+        ZIndex: =31
+
