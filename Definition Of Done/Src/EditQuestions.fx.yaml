@@ -187,10 +187,16 @@ EditQuestions As screen:
     Button1 As button:
         DisplayMode: =If(editQuestions.Mode=FormMode.Edit, DisplayMode.Edit,DisplayMode.Disabled)
         Height: =30
-        OnSelect: =SubmitForm(editQuestions)
+        OnSelect: |-
+            =SubmitForm(editQuestions);
+            Notify(
+                "Question Created",
+                NotificationType.Information
+            )
         Text: ="Submit"
-        X: =1195
-        Y: =543
+        Width: =168
+        X: =1180
+        Y: =549
         ZIndex: =13
 
     editQuestions As form:
@@ -744,4 +750,18 @@ EditQuestions As screen:
                 Wrap: =false
                 Y: =DataCardKey39.Y
                 ZIndex: =4
+
+    Button2 As button:
+        Height: =30
+        OnSelect: |-
+            =Remove('Definition of Done',questions.Selected);
+            Notify(
+                "Question Deleted",
+                NotificationType.Information
+            )
+        Text: ="Delete Question"
+        Width: =168
+        X: =999
+        Y: =549
+        ZIndex: =15
 
